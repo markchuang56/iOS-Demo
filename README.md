@@ -26,6 +26,7 @@ You can add emoji to your writing by typing :EMOJICODE:.
 @octocat :+1: This PR looks great - it's ready to merge! :shipit:
 
 code tree:
+
 	- api
 		- proto
 			- v1
@@ -68,7 +69,6 @@ code tree:
 				- refresh_service.go
 				- step_distance-parser.go
 				- todo-service.go
-	
 	- third_party
 		- google
 			- api
