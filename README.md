@@ -21,3 +21,6 @@ git commit
 ```
 
 This site was built using [GitHub Pages](https://pages.github.com/).
+
+You can add emoji to your writing by typing :EMOJICODE:.
+@octocat :+1: This PR looks great - it's ready to merge! :shipit:
