@@ -20,6 +20,33 @@ git add
 git commit
 ```
 
+Run Server commands is:
+```
+server -grpc-port=9090 -http-port=8020
+```
+
+Run client-grpc commands is:
+```
+client-grpc -server=localhost:9090
+```
+
+Run client-rest commands is:
+```
+client-rest -server=http://localhost:8020
+```
+
+Create new access token
+Run web_oauth commands is:
+```
+web_oauth
+```
+
+Create .pb.go file
+Run protoc-gen commands is:
+```
+third_party/protoc-gen.sh
+```
+
 This site was built using [GitHub Pages](https://pages.github.com/).
 
 You can add emoji to your writing by typing :EMOJICODE:.
@@ -85,7 +112,14 @@ code tree:
 				- openapiv2.proto
 		- protoc-gen.sh
 	
+web_oauth :
+
 web_oauth
+	- templates
+		- oauth.html
+	- helper.go
+	- web-oauth.go
+	- web_oauth*
 
 
 jx-microservice/cmd/server
