@@ -52,9 +52,8 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 You can add emoji to your writing by typing :EMOJICODE:.
 @octocat :+1: This PR looks great - it's ready to merge! :shipit:
 
-code tree:
 
-1. code tree
+1. service and client code tree:
 	- api
 		- proto
 			- v1
@@ -115,7 +114,7 @@ code tree:
 	
 
 
-2. web_oauth
+2. web_oauth code tree:
 	- templates
 		- oauth.html
 	- helper.go
