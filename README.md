@@ -53,7 +53,9 @@ You can add emoji to your writing by typing :EMOJICODE:.
 @octocat :+1: This PR looks great - it's ready to merge! :shipit:
 
 
-1. service and client code tree:
+Code tree:
+
+1. service and client:
 	- api
 		- proto
 			- v1
@@ -114,7 +116,7 @@ You can add emoji to your writing by typing :EMOJICODE:.
 	
 
 
-2. web_oauth code tree:
+2. web_oauth:
 	- templates
 		- oauth.html
 	- helper.go
