@@ -20,28 +20,28 @@ git add
 git commit
 ```
 
-###Run Server commands is:###
+###Run Server commands is:
 ```
 server -grpc-port=9090 -http-port=8020
 ```
 
-###Run client-grpc commands is:###
+###Run client-grpc commands is:
 ```
 client-grpc -server=localhost:9090
 ```
 
-###Run client-rest commands is:###
+###Run client-rest commands is:
 ```
 client-rest -server=http://localhost:8020
 ```
 
-###Create new access token###
+###Create new access token
 Run web_oauth commands under the web_oauth folder is:
 ```
 web_oauth
 ```
 
-###Create .pb.go file###
+###Create .pb.go file
 Run protoc-gen commands is:
 ```
 third_party/protoc-gen.sh
@@ -53,7 +53,7 @@ You can add emoji to your writing by typing :EMOJICODE:.
 @octocat :+1: This PR looks great - it's ready to merge! :shipit:
 
 
-###Code tree:###
+###Code tree:
 
 1. service and client:
 	- api
