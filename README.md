@@ -21,31 +21,24 @@ git commit
 ```
 
 ### Run Server commands is:
-```
-server -grpc-port=9090 -http-port=8020
-```
+`server -grpc-port=9090 -http-port=8020`
 
 ### Run client-grpc commands is:
-```
-client-grpc -server=localhost:9090
-```
+`client-grpc -server=localhost:9090`
 
 ### Run client-rest commands is:
-```
-client-rest -server=http://localhost:8020
-```
+`client-rest -server=http://localhost:8020`
+
 
 ### Create new access token
 Run web_oauth commands under the web_oauth folder is:
-```
-web_oauth
-```
+`web_oauth`
+
 
 ### Create .pb.go file
 Run protoc-gen commands is:
-```
-third_party/protoc-gen.sh
-```
+`third_party/protoc-gen.sh`
+
 
 This site was built using [GitHub Pages](https://pages.github.com/).
 
