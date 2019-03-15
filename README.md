@@ -55,7 +55,7 @@ You can add emoji to your writing by typing :EMOJICODE:.
 
 ### Code tree:
 
-1. service and client:
+#### 1. service and client:
 	- api
 		- proto
 			- v1
@@ -116,7 +116,7 @@ You can add emoji to your writing by typing :EMOJICODE:.
 	
 
 
-2. web_oauth:
+#### 2. web_oauth:
 	- templates
 		- oauth.html
 	- helper.go
