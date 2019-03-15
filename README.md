@@ -6,7 +6,7 @@
 
 *This text is italicized*
 
-**This text is _extremely_important**
+**This text is _extremely_ important**
 
 In the words of Abraham Lincoln:
 > Pardon my French
