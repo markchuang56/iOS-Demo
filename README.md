@@ -36,7 +36,7 @@ client-rest -server=http://localhost:8020
 ```
 
 Create new access token
-Run web_oauth commands is:
+Run web_oauth commands under the web_oauth folder is:
 ```
 web_oauth
 ```
@@ -54,6 +54,7 @@ You can add emoji to your writing by typing :EMOJICODE:.
 
 code tree:
 
+1. code tree
 	- api
 		- proto
 			- v1
@@ -112,9 +113,9 @@ code tree:
 				- openapiv2.proto
 		- protoc-gen.sh
 	
-web_oauth :
 
-web_oauth
+
+2. web_oauth
 	- templates
 		- oauth.html
 	- helper.go
