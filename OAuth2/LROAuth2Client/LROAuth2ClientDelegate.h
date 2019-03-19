@@ -15,6 +15,7 @@
 @required
 - (void)oauthClientDidReceiveAccessToken:(LROAuth2Client *)client;
 - (void)oauthClientDidRefreshAccessToken:(LROAuth2Client *)client;
+- (void)oauthClientDidReceiveUserProfile:(NSString *)uid;
 
 @optional
 - (void)oauthClientDidReceiveAccessCode:(LROAuth2Client *)client;

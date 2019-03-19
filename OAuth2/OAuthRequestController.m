@@ -73,6 +73,14 @@
     [oauthClient refreshAccessToken:accessToken];
 }
 
+- (void)getDefaultUserProfile:(LROAuth2AccessToken *)accessToken
+{
+    [oauthClient getDefaultUserProfile:accessToken];
+}
+
+
+
+#pragma mark - === SEND BACK OAuth2 DATA ===
 - (void)sendBackOAuth2Data:(LROAuth2AccessToken *)client {
     if ([_delegate respondsToSelector:@selector(didAuthorized:)]) {
         [_dictValues setObject:VALID(client.accessToken, NSString)?client.accessToken:@"" forKey:kOAuth_AccessToken];
@@ -81,7 +89,25 @@
         
         [_delegate didAuthorized:_dictValues];
     }
+}
 
+- (void)sendBackUserProfileData:(NSString *)uid {
+    
+    
+    NSDictionary *userData = [[NSDictionary alloc] init];
+    userData = @{
+        //@"kOAuth_UID": uid,
+        @"kOAuth_AccessToken": [_dictValues objectForKey:@"kOAuth_AccessToken"],
+        //@"kOAuth_UID": uid,
+        @"kOAuth_RefreshToken": [_dictValues objectForKey:@"kOAuth_RefreshToken"],
+        @"kOAuth_ExpiredDate": [_dictValues objectForKey:@"kOAuth_ExpiredDate"],
+        @"kOAuth_UID": uid,
+    };
+    
+    
+    if ([_delegate respondsToSelector:@selector(didGetUserProfile:)]) {
+        [_delegate didGetUserProfile:userData];
+    }
 }
 
 #pragma mark - IBAction methods
@@ -93,7 +119,7 @@
         
     } else {
         [self dismissViewControllerAnimated:YES completion:^{
-DLog(@"dismiss view controller");
+            DLog(@"dismiss view controller");
         }];
     }
 }
@@ -103,17 +129,28 @@ DLog(@"dismiss view controller");
 
 - (void)oauthClientDidReceiveAccessToken:(LROAuth2Client *)client
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"OAuthReceivedAccessTokenNotification" object:client.accessToken];
+    DLog(@"--- Did Receive Access Token ---");
+    //[[NSNotificationCenter defaultCenter] postNotificationName:@"OAuthReceivedAccessTokenNotification" object:client.accessToken];
+    [self sendBackOAuth2Data:client.accessToken];
+    
+    // H2-DEBUG
+    //[self btnCancelTouched:nil];
+    
+    [self getDefaultUserProfile:client.accessToken];
+}
+
+- (void)oauthClientDidRefreshAccessToken:(LROAuth2Client *)client
+{
+    DLog(@"--- Did Refresh Access Token ---");
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"OAuthRefreshedAccessTokenNotification" object:client.accessToken];
     [self sendBackOAuth2Data:client.accessToken];
     
     [self btnCancelTouched:nil];
 }
 
-- (void)oauthClientDidRefreshAccessToken:(LROAuth2Client *)client
+- (void)oauthClientDidReceiveUserProfile:(NSString *)uid
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"OAuthRefreshedAccessTokenNotification" object:client.accessToken];
-    [self sendBackOAuth2Data:client.accessToken];
-    
+    [self sendBackUserProfileData:uid];
     [self btnCancelTouched:nil];
 }
 

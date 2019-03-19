@@ -12,6 +12,7 @@
 @class LROAuth2AccessToken;
 
 @interface LROAuth2Client : NSObject {
+    
     NSString *clientID;
     NSString *clientSecret;
     NSURL *redirectURL;
@@ -19,6 +20,7 @@
     NSURL *userURL;
     NSURL *tokenURL;
     LROAuth2AccessToken *accessToken;
+     
     NSMutableArray *requests;
     id<LROAuth2ClientDelegate> __unsafe_unretained delegate;
     BOOL debug;
@@ -44,6 +46,7 @@
 - (NSURLRequest *)userAuthorizationRequestWithParameters:(NSDictionary *)additionalParameters;
 - (void)verifyAuthorizationWithAccessCode:(NSString *)accessCode;
 - (void)refreshAccessToken:(LROAuth2AccessToken *)_accessToken;
+- (void)getDefaultUserProfile:(LROAuth2AccessToken *)_accessToken;
 @end
 
 @interface LROAuth2Client (UIWebViewIntegration) <UIWebViewDelegate>

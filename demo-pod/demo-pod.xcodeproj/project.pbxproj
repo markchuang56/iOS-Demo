@@ -22,6 +22,7 @@
 		4AD3D4F2223F94A60067E861 /* NSURL+QueryInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3D4F1223F94A60067E861 /* NSURL+QueryInspector.m */; };
 		4AD3D4F5223F95790067E861 /* NSDictionary+QueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3D4F4223F95790067E861 /* NSDictionary+QueryString.m */; };
 		4AD3D4F8223F968B0067E861 /* LROAuth2AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3D4F7223F968B0067E861 /* LROAuth2AccessToken.m */; };
+		4AD3D4FB223FA0880067E861 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD3D4FA223FA0880067E861 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		4AD3D4F4223F95790067E861 /* NSDictionary+QueryString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+QueryString.m"; sourceTree = "<group>"; };
 		4AD3D4F6223F968A0067E861 /* LROAuth2AccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LROAuth2AccessToken.h; sourceTree = "<group>"; };
 		4AD3D4F7223F968B0067E861 /* LROAuth2AccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LROAuth2AccessToken.m; sourceTree = "<group>"; };
+		4AD3D4FA223FA0880067E861 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD3D4FB223FA0880067E861 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,7 @@
 				4AD3D4B3223F7DE80067E861 /* Support-files */,
 				4AD3D49C223F7D040067E861 /* demo-pod */,
 				4AD3D49B223F7D040067E861 /* Products */,
+				4AD3D4F9223FA0880067E861 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +158,14 @@
 			);
 			name = Base64;
 			path = ../../OAuth2/Base64;
+			sourceTree = "<group>";
+		};
+		4AD3D4F9223FA0880067E861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AD3D4FA223FA0880067E861 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

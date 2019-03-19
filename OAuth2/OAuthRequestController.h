@@ -15,6 +15,7 @@
 
 @required
 - (void)didAuthorized:(NSDictionary *)dictResponse;
+- (void)didGetUserProfile:(NSDictionary *)dictResponse;
 
 @optional
 - (void)didCancel;

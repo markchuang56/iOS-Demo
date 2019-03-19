@@ -89,7 +89,7 @@
 
 - (void)verifyAuthorizationWithAccessCode:(NSString *)accessCode;
 {
-    DLog(@"verify Authorization With Access Code");
+    DLog(@"verify Authorization With Access Code = %@", accessCode);
     @synchronized(self) {
         if (isVerifying) return; // don't allow more than one auth request
         
@@ -153,6 +153,30 @@
     [_networkQueue addOperation:operation];
 }
 
+#pragma mark - === GET USER PROFILE ===
+- (void)getDefaultUserProfile:(LROAuth2AccessToken *)_accessToken
+{
+    accessToken = _accessToken;
+    
+    NSURL *userProfileURL  = [NSURL URLWithString:@"https://api.fitbit.com/1/user/-/profile.json"];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:userProfileURL];
+    [request setHTTPMethod:@"GET"];
+    
+    [request setValue:[NSString stringWithFormat:@"Bearer %@", [NSString stringWithFormat:@"%@", _accessToken.accessToken]] forHTTPHeaderField:@"Authorization"];
+    
+    
+    LRURLRequestOperation *operation = [[LRURLRequestOperation alloc] initWithURLRequest:request];
+    
+    __unsafe_unretained id blockOperation = operation;
+    
+    [operation setCompletionBlock:^{
+        [self handleCompletionForGetUserProfileRequestOperation:blockOperation];
+    }];
+    
+    [_networkQueue addOperation:operation];
+}
+
 - (void)handleCompletionForAuthorizationRequestOperation:(LRURLRequestOperation *)operation
 {
     DLog(@"handle completion");
@@ -191,24 +215,87 @@
     }
 }
 
+- (void)handleCompletionForGetUserProfileRequestOperation:(LRURLRequestOperation *)operation
+{
+    DLog(@"handle completion for Get User Profile");
+    NSHTTPURLResponse *response = (NSHTTPURLResponse *)operation.URLResponse;
+    
+    if (response.statusCode == 200) {
+        NSError *parserError;
+        NSDictionary *pfData = [NSJSONSerialization JSONObjectWithData:operation.responseData options:0 error:&parserError];
+        
+        if (pfData == nil) {
+            // try and decode the response body as a query string instead
+            NSString *responseString = [[NSString alloc] initWithData:operation.responseData encoding:NSUTF8StringEncoding];
+            pfData = [NSDictionary dictionaryWithFormEncodedString:responseString];
+        }
+        
+        NSDictionary *userData = [[NSDictionary alloc] initWithDictionary:[pfData objectForKey:@"user"]];
+        
+        DLog(@"user id = %@", [userData objectForKey:@"encodedId"]);
+        
+        if ([userData objectForKey:@"encodedId"] == nil) {
+            NSAssert(NO, @"Unhandled parsing failure");
+        }
+        
+        DLog(@"PF = %@", [userData objectForKey:@"memberSince"]);
+        
+        //DLog(@"PF = %@", [pfData objectForKey:@"user"]);
+        
+        //oauthClientDidReceiveUserProfile
+        if (accessToken == nil) {
+            DLog(@"accessToken == nil");
+        } else {
+            DLog(@"accessToken == GOOD!!");
+        }
+        
+        if ([self.delegate respondsToSelector:@selector(oauthClientDidReceiveUserProfile:)]) {
+            [self.delegate oauthClientDidReceiveUserProfile:[userData objectForKey:@"encodedId"]];
+        }
+        /*
+        if (accessToken == nil) {
+            accessToken = [[LROAuth2AccessToken alloc] initWithAuthorizationResponse:authData];
+            if ([self.delegate respondsToSelector:@selector(oauthClientDidReceiveAccessToken:)]) {
+                [self.delegate oauthClientDidReceiveAccessToken:self];
+            }
+        } else {
+            [accessToken refreshFromAuthorizationResponse:authData];
+            if ([self.delegate respondsToSelector:@selector(oauthClientDidRefreshAccessToken:)]) {
+                [self.delegate oauthClientDidRefreshAccessToken:self];
+            }
+        }
+         */
+        
+    }
+    else {
+        if (operation.connectionError) {
+            DLog(@"Connection error (pf-0) : %@", operation.connectionError);
+        } else {
+            DLog(@"Connection error )pf-1): %@", [[NSString alloc] initWithData:operation.responseData encoding:NSUTF8StringEncoding]);
+        }
+    }
+}
+
 @end
 
 @implementation LROAuth2Client (UIWebViewIntegration)
 
 - (void)authorizeUsingWebView:(UIWebView *)webView;
 {
+    DLog(@"authorize Using WebView 0");
     [self authorizeUsingWebView:webView additionalParameters:nil];
 }
 
 - (void)authorizeUsingWebView:(UIWebView *)webView additionalParameters:(NSDictionary *)additionalParameters;
 {
+    DLog(@"authorize Using WebView 1");
     [webView setDelegate:self];
     [webView loadRequest:[self userAuthorizationRequestWithParameters:additionalParameters]];
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
 {
-    DLog(@"web should strt load with request");
+    DLog(@"web should start load with request");
     if ([[request.URL absoluteString] hasPrefix:[self.redirectURL absoluteString]]) {
         NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
         for (NSHTTPCookie *cookie in [storage cookies]) {
@@ -216,20 +303,21 @@
         }
         [[NSUserDefaults standardUserDefaults] synchronize];
         [self extractAccessCodeFromCallbackURL:request.URL];
-        
+        DLog(@"web should start load with request - NOT YET 0");
         return NO;
     } else if (self.cancelURL && [[request.URL absoluteString] hasPrefix:[self.cancelURL absoluteString]]) {
         if ([self.delegate respondsToSelector:@selector(oauthClientDidCancel:)]) {
             [self.delegate oauthClientDidCancel:self];
         }
-        
+        DLog(@"web should start load with request - NOT YET 1");
         return NO;
     }
     
     if ([self.delegate respondsToSelector:@selector(webView:shouldStartLoadWithRequest:navigationType:)]) {
+        DLog(@"web should start load with request - NOT YET ???");
         return [self.delegate webView:webView shouldStartLoadWithRequest:request navigationType:navigationType];
     }
-    
+    DLog(@"web should strt load with request - DONE");
     return YES;
 }
 
