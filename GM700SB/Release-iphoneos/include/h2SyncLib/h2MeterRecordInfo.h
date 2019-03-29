@@ -179,14 +179,14 @@
 @property (readwrite) Byte *syncInfoTempBuffer;
 @property (readwrite) UInt16 syncInfoRocheNakTimes;
 @property (readwrite) UInt8 systemMeterReportLength;
-@property (readwrite) Byte *systemGlobalBuffer;
+@property (atomic, readwrite) Byte *systemGlobalBuffer;
 
 @property (readwrite) UInt16 systemGlobalBufferIndex;
 @property (readwrite) UInt8 systemGlobalBufferState;
 @property (readwrite) UInt8 cmdMeterLength;
 @property (readwrite) Byte *cmdMeterBuffer;
 //@property (readwrite) UInt16 syncRowBatteryValue;
-@property (nonnull, strong) NSString *syncInfoAudioStatus;
+@property (nonatomic, strong) NSString *syncInfoAudioStatus;
 @property (readwrite) BOOL systemSyncCmdAck;
 
 + (H2SyncSystemMessageInfo *)sharedInstance;

@@ -55,6 +55,8 @@
 
 - (void)extractExpiresAtFromResponse
 {
+    DLog(@"extract Expires At From Response");
+    DLog(@"The EXPIRY = %d", [[self.authResponseData objectForKey:@"expires_in"] intValue]);
     NSTimeInterval expiresIn = (NSTimeInterval)[[self.authResponseData objectForKey:@"expires_in"] intValue];
     expiresAt = [[NSDate alloc] initWithTimeIntervalSinceNow:expiresIn];
 }

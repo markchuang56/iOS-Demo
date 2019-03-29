@@ -17,7 +17,10 @@
 
 
 
-@interface ViewController ()
+@interface ViewController () {
+    NSString *strUserid;
+    NSString *strExpiry;
+}
 
 @end
 
@@ -27,6 +30,59 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     //checkInterNetStatus();
+    //DLog(@"UNIX TIME STAMP = %p", NSDate.date.timeIntervalSince1970);
+    double ab = 1.1;
+    DLog(@"double = %f", ab);
+    DLog(@"double = %d", (int)sizeof(ab));
+    NSDate *now = [NSDate date];
+    DLog(@"CT = %@", now);
+    double xy = now.timeIntervalSince1970;
+    DLog(@"Unix Time Stamp = %f", xy);
+    /*
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss ZZ"];
+    dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+    dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
+    
+    NSDate *meterDateTime =  [[NSDate alloc]init];
+    DLog(@"ST = %@", meterDateTime);
+     */
+    DLog(@"");
+    
+    // get current date/time
+    NSDate *today = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss ZZ"];
+    // display in 12HR/24HR (i.e. 11:25PM or 23:25) format according to User Settings
+    //[dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    //[dateFormatter setTimeStyle:NSDateFormatterLongStyle];
+    //NSDateFormatterLongStyle
+    //NSDateFormatterFullStyle
+    
+    NSString *currentTime = [dateFormatter stringFromDate:today];
+    //[dateFormatter release];
+    DLog(@"what's the current time = %@",currentTime);
+    
+    double wz = today.timeIntervalSince1970;
+    DLog(@"Unix Time Stamp = %f", wz);
+    
+  /*
+    NSDate *SB = [[NSDate alloc] init];
+    //#ifdef DEBUG_BP
+    DLog(@"CT IS --> %@", SB);
+    //#endif
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:SB];
+    DLog(@"WHAT'S = %@", components);
+    */
+    /*
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    [calendar setTimeZone:[NSTimeZone localTimeZone]];
+    NSDateComponents *dateComponents = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:[NSDate date]];
+    NSDate *d = [calendar dateFromComponents:dateComponents];
+    DLog(@"time is = %@", d);
+     */
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fitbitTokenTask:) name:@"TOKEN_BACK" object:nil];
 }
 
 /*
@@ -95,6 +151,7 @@
 */
 
 - (IBAction)authorizeTask:(id)sender {
+    _tokenTextView.text = [NSString stringWithFormat:@"..."];
     DLog(@"Authorize ...");
     NSMutableDictionary *dictService = [NSMutableDictionary dictionary];
     [dictService setObject:@"https://www.fitbit.com/oauth2/authorize" forKey:kOAuth_AuthorizeURL];
@@ -121,15 +178,52 @@
     DLog(@"Get User Profile ...");
 }
 
+
+- (void)fitbitTokenTask:(id)sender {
+    DLog(@"and this  = %@", strUserid);
+    DLog(@"and this  = %@", strExpiry);
+    _labelUserId.text = strUserid;
+    
+    
+    _labelExpiry.text = strExpiry;
+    
+    
+    DLog(@"FITBIT TOKEN BACK!!");
+}
 #pragma mark - Delegate
 
 - (void)didAuthorized:(NSDictionary *)dictResponse {
     DLog(@"AUTHORIZED ... DID ...");
     DLog(@"%@", dictResponse);
+    DLog(@"%@", [dictResponse objectForKey: @"kOAuth_UID"]);
+    DLog(@"%@", [dictResponse objectForKey: @"kOAuth_ExpiredDate"]);
+    DLog(@"%@", [dictResponse objectForKey: @"kOAuth_RefreshToken"]);
+    
+    //DLog(@"abc = %@", strUserid);
+    //strExpiry = [dictResponse objectForKey: @"kOAuth_ExpiredDate"];
+    
+    
+    
+    //_tokenTextView.text = @"what happen ...";
+    /*
+    _tokenTextView.text = [dictResponse objectForKey: @"kOAuth_UID"];
+    _tokenTextView.text = [_tokenTextView.text stringByAppendingString:@"\n"];
+    _tokenTextView.text = [_tokenTextView.text stringByAppendingString:[dictResponse objectForKey: @"kOAuth_ExpiredDate"]];
+    _tokenTextView.text = [_tokenTextView.text stringByAppendingString:@"\n"];
+    _tokenTextView.text = [_tokenTextView.text stringByAppendingString:[dictResponse objectForKey: @"kOAuth_RefreshToken"]];
+     */
 }
 
 - (void)didGetUserProfile:(NSDictionary *)dictResponse {
+    DLog(@"Profile come back ...");
     DLog(@"%@", dictResponse);
+    
+    NSString *strTmp = [dictResponse objectForKey: @"kOAuth_UID"];
+    strUserid = [NSString stringWithFormat:@"%@", strTmp];
+    
+    strExpiry = [dictResponse objectForKey: @"kOAuth_RefreshToken"];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"TOKEN_BACK" object:self];
 }
 
 

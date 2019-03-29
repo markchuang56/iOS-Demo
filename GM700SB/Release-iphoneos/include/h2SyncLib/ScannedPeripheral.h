@@ -25,12 +25,12 @@
 
 @interface ScannedPeripheral : NSObject
 
-@property (strong, nonatomic) CBPeripheral* peripheral;
+@property (nonatomic, strong) CBPeripheral* peripheral;
 @property (assign, nonatomic) int RSSI;
 @property (nonatomic) BOOL isConnected;
-@property (strong, nonatomic) NSString* bleScanIdentifier;
-@property (strong, nonatomic) NSString* bleScanSerialNumber;
-@property (strong, nonatomic) NSString* bleScanModel;
+@property (nonatomic, strong) NSString* bleScanIdentifier;
+@property (nonatomic, strong) NSString* bleScanSerialNumber;
+@property (nonatomic, strong) NSString* bleScanModel;
 
 + (ScannedPeripheral *) initWithPeripheral:(CBPeripheral *)peripheral rssi:(int)RSSI isPeripheralConnected:(BOOL)isConnected;
 

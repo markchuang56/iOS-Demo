@@ -90,6 +90,13 @@
 		14F72BF51C62174E00CE03F8 /* BGMItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F72BF41C62174E00CE03F8 /* BGMItemCell.xib */; };
 		14F72BF81C63495B00CE03F8 /* BleBgmPaired.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F72BF71C63495B00CE03F8 /* BleBgmPaired.m */; };
 		4A1401842154E85E004EB05C /* ALCommonHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1401832154E85E004EB05C /* ALCommonHMAC.m */; };
+		4A24AE832248970500404577 /* OAuth2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A24AE812248970500404577 /* OAuth2ViewController.m */; };
+		4A24AE842248970500404577 /* OAuth2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A24AE822248970500404577 /* OAuth2ViewController.xib */; };
+		4A24AEB12248CED500404577 /* OAuthRequestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A24AEB02248CED500404577 /* OAuthRequestController.xib */; };
+		4A24AECF2248D94200404577 /* NSString+QueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A24AEC82248D94200404577 /* NSString+QueryString.m */; };
+		4A24AED02248D94200404577 /* NSDictionary+QueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A24AECA2248D94200404577 /* NSDictionary+QueryString.m */; };
+		4A24AED12248D94200404577 /* NSURL+QueryInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A24AECB2248D94200404577 /* NSURL+QueryInspector.m */; };
+		4A24AED62248EAD800404577 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A24AED52248EAD800404577 /* Base64.m */; };
 		4A545A4A20DB56DC00C27ECF /* MySecurities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A545A4920DB56DC00C27ECF /* MySecurities.m */; };
 		4ADD29CB20BEB88C006C8E6A /* gray_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ADD29CA20BEB88C006C8E6A /* gray_button.png */; };
 /* End PBXBuildFile section */
@@ -242,6 +249,25 @@
 		14F72BF71C63495B00CE03F8 /* BleBgmPaired.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BleBgmPaired.m; path = BLE/BleBgmPaired.m; sourceTree = "<group>"; };
 		4A1401822154E85E004EB05C /* ALCommonHMAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALCommonHMAC.h; sourceTree = "<group>"; };
 		4A1401832154E85E004EB05C /* ALCommonHMAC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALCommonHMAC.m; sourceTree = "<group>"; };
+		4A24AE732248886900404577 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4A24AE7622488ACF00404577 /* OAuthKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAuthKey.h; path = "Release-iphoneos/include/h2SyncLib/OAuthKey.h"; sourceTree = "<group>"; };
+		4A24AE7722488ACF00404577 /* OAuthRequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAuthRequestController.h; path = "Release-iphoneos/include/h2SyncLib/OAuthRequestController.h"; sourceTree = "<group>"; };
+		4A24AE802248970500404577 /* OAuth2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuth2ViewController.h; sourceTree = "<group>"; };
+		4A24AE812248970500404577 /* OAuth2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAuth2ViewController.m; sourceTree = "<group>"; };
+		4A24AE822248970500404577 /* OAuth2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OAuth2ViewController.xib; sourceTree = "<group>"; };
+		4A24AEB02248CED500404577 /* OAuthRequestController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OAuthRequestController.xib; path = "Release-iphoneos/OAuthRequestController.xib"; sourceTree = "<group>"; };
+		4A24AEB82248D43E00404577 /* LROAuth2Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LROAuth2Client.h; path = "Release-iphoneos/include/h2SyncLib/LROAuth2Client.h"; sourceTree = "<group>"; };
+		4A24AEBA2248D43F00404577 /* LROAuth2ClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LROAuth2ClientDelegate.h; path = "Release-iphoneos/include/h2SyncLib/LROAuth2ClientDelegate.h"; sourceTree = "<group>"; };
+		4A24AEBC2248D43F00404577 /* LRURLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LRURLRequestOperation.h; path = "Release-iphoneos/include/h2SyncLib/LRURLRequestOperation.h"; sourceTree = "<group>"; };
+		4A24AEBE2248D43F00404577 /* LROAuth2AccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LROAuth2AccessToken.h; path = "Release-iphoneos/include/h2SyncLib/LROAuth2AccessToken.h"; sourceTree = "<group>"; };
+		4A24AEC12248D94200404577 /* NSString+QueryString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QueryString.h"; sourceTree = "<group>"; };
+		4A24AEC42248D94200404577 /* NSURL+QueryInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+QueryInspector.h"; sourceTree = "<group>"; };
+		4A24AEC52248D94200404577 /* NSDictionary+QueryString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+QueryString.h"; sourceTree = "<group>"; };
+		4A24AEC82248D94200404577 /* NSString+QueryString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QueryString.m"; sourceTree = "<group>"; };
+		4A24AECA2248D94200404577 /* NSDictionary+QueryString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+QueryString.m"; sourceTree = "<group>"; };
+		4A24AECB2248D94200404577 /* NSURL+QueryInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+QueryInspector.m"; sourceTree = "<group>"; };
+		4A24AED42248EAD800404577 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		4A24AED52248EAD800404577 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		4A545A4820DB56DC00C27ECF /* MySecurities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySecurities.h; sourceTree = "<group>"; };
 		4A545A4920DB56DC00C27ECF /* MySecurities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySecurities.m; sourceTree = "<group>"; };
 		4ADD29CA20BEB88C006C8E6A /* gray_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gray_button.png; path = LIB/gray_button.png; sourceTree = "<group>"; };
@@ -306,6 +332,7 @@
 		1486B5F11C50DB21005CE247 = {
 			isa = PBXGroup;
 			children = (
+				4A24AE6F2248870200404577 /* OauthTable */,
 				4A545A4720DB568C00C27ECF /* Secuity */,
 				141EDC311FCD59AC0052AAA6 /* PagesT */,
 				14A9C5C11ECC43D100EBFB49 /* FORM */,
@@ -362,6 +389,7 @@
 			children = (
 				1486B5FE1C50DB21005CE247 /* main.m */,
 				14A8DF911FAC57F4007D6A13 /* AppDebug.h */,
+				4A24AE732248886900404577 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -403,6 +431,15 @@
 		1486B6161C50DCA6005CE247 /* LIB */ = {
 			isa = PBXGroup;
 			children = (
+				4A24AED32248EAD800404577 /* Base64 */,
+				4A24AEBF2248D94200404577 /* LROAuth2Client */,
+				4A24AEBE2248D43F00404577 /* LROAuth2AccessToken.h */,
+				4A24AEB82248D43E00404577 /* LROAuth2Client.h */,
+				4A24AEBA2248D43F00404577 /* LROAuth2ClientDelegate.h */,
+				4A24AEBC2248D43F00404577 /* LRURLRequestOperation.h */,
+				4A24AEB02248CED500404577 /* OAuthRequestController.xib */,
+				4A24AE7622488ACF00404577 /* OAuthKey.h */,
+				4A24AE7722488ACF00404577 /* OAuthRequestController.h */,
 				4ADD29CA20BEB88C006C8E6A /* gray_button.png */,
 				1449B8D11FE12CFD000F4A0B /* H2EquipID.h */,
 				14B6EDE71EC592D500D18715 /* H2Records.h */,
@@ -580,6 +617,40 @@
 			name = BGM;
 			sourceTree = "<group>";
 		};
+		4A24AE6F2248870200404577 /* OauthTable */ = {
+			isa = PBXGroup;
+			children = (
+				4A24AE802248970500404577 /* OAuth2ViewController.h */,
+				4A24AE812248970500404577 /* OAuth2ViewController.m */,
+				4A24AE822248970500404577 /* OAuth2ViewController.xib */,
+			);
+			path = OauthTable;
+			sourceTree = "<group>";
+		};
+		4A24AEBF2248D94200404577 /* LROAuth2Client */ = {
+			isa = PBXGroup;
+			children = (
+				4A24AEC12248D94200404577 /* NSString+QueryString.h */,
+				4A24AEC42248D94200404577 /* NSURL+QueryInspector.h */,
+				4A24AEC52248D94200404577 /* NSDictionary+QueryString.h */,
+				4A24AEC82248D94200404577 /* NSString+QueryString.m */,
+				4A24AECA2248D94200404577 /* NSDictionary+QueryString.m */,
+				4A24AECB2248D94200404577 /* NSURL+QueryInspector.m */,
+			);
+			name = LROAuth2Client;
+			path = "Release-iphoneos/LROAuth2Client";
+			sourceTree = "<group>";
+		};
+		4A24AED32248EAD800404577 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				4A24AED42248EAD800404577 /* Base64.h */,
+				4A24AED52248EAD800404577 /* Base64.m */,
+			);
+			name = Base64;
+			path = "Release-iphoneos/Base64";
+			sourceTree = "<group>";
+		};
 		4A545A4720DB568C00C27ECF /* Secuity */ = {
 			isa = PBXGroup;
 			children = (
@@ -662,8 +733,10 @@
 				14A9C5CC1ECC444F00EBFB49 /* checkbox_tick.png in Resources */,
 				14A9C5C61ECC443200EBFB49 /* checkbox_empty.png in Resources */,
 				4ADD29CB20BEB88C006C8E6A /* gray_button.png in Resources */,
+				4A24AEB12248CED500404577 /* OAuthRequestController.xib in Resources */,
 				14A9C5C81ECC443200EBFB49 /* checkbox_empty@3x.png in Resources */,
 				149877731C5241460080E0FE /* blue2.png in Resources */,
+				4A24AE842248970500404577 /* OAuth2ViewController.xib in Resources */,
 				1486B60D1C50DB21005CE247 /* LaunchScreen.storyboard in Resources */,
 				1486B60A1C50DB21005CE247 /* Assets.xcassets in Resources */,
 				14A9C5C71ECC443200EBFB49 /* checkbox_empty@2x.png in Resources */,
@@ -702,6 +775,7 @@
 				147E742C1CF7FC9A000FCB37 /* sn_qrcode.m in Sources */,
 				1486B6021C50DB21005CE247 /* AppDelegate.m in Sources */,
 				1486B61E1C50DEC4005CE247 /* SNSeedViewController.m in Sources */,
+				4A24AED62248EAD800404577 /* Base64.m in Sources */,
 				14AF7D5A1E7E7BFE00D4A301 /* OMUserPfBirthday.m in Sources */,
 				141EDC3A1FCD72FF0052AAA6 /* VendorViewController.m in Sources */,
 				14F72BF31C620D8C00CE03F8 /* BGMItemCell.m in Sources */,
@@ -713,8 +787,11 @@
 				1486B64F1C521EE1005CE247 /* UIImage+MDQRCode.m in Sources */,
 				1405C3E81C7487D20060D2AC /* CableInfoViewController.m in Sources */,
 				14A8DF941FAC7765007D6A13 /* OmronSetUserTagViewController.m in Sources */,
+				4A24AE832248970500404577 /* OAuth2ViewController.m in Sources */,
 				141DD4341FA0A140009842CB /* LastDateTimeViewController.m in Sources */,
 				1466520F1F26EDF400FEA770 /* OmronShowUserId.m in Sources */,
+				4A24AED02248D94200404577 /* NSDictionary+QueryString.m in Sources */,
+				4A24AECF2248D94200404577 /* NSString+QueryString.m in Sources */,
 				1484A0511E891C5F005FF4F6 /* OmronPageViewController.m in Sources */,
 				149877621C523DC30080E0FE /* QRScanViewController.m in Sources */,
 				14E991502057B39500395A8E /* DACollection.m in Sources */,
@@ -735,6 +812,7 @@
 				146E4AB42080A9FD00D001C5 /* BleGateViewController.m in Sources */,
 				14C08F981C61DD8A00820C11 /* BGMBrandsViewController.m in Sources */,
 				1486B64C1C521ECB005CE247 /* split.c in Sources */,
+				4A24AED12248D94200404577 /* NSURL+QueryInspector.m in Sources */,
 				14AF7D5B1E7E7BFE00D4A301 /* OMUserPfGender.m in Sources */,
 				14A9C5D21ECC467B00EBFB49 /* uIDCheckBoxViewController.m in Sources */,
 				1486B6461C521ECB005CE247 /* bitstream.c in Sources */,
@@ -862,6 +940,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9TNVAWA2VV;
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = SQX/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=0",
 					"DEBUG_LIB=0",
@@ -897,6 +976,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = SQX/PrefixHeader.pch;
 				INFOPLIST_FILE = SQX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

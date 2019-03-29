@@ -15,6 +15,8 @@
 #import "LibDelegateFunc.h"
 #import "STBViewController.h"
 
+#import "OAuth2ViewController.h"
+
 
 #import "TMShowUserId.h"
 #import "OmronShowUserId.h"
@@ -710,6 +712,11 @@ static NSMutableArray *_tmpRecords;
     NSLog(@"M -T Documents directory: %@", [fileMgr contentsOfDirectoryAtPath:documentsDirectory error:&error]);
     
 #endif
+}
+
+- (IBAction)sqxOAuthTable:(id)sender {
+    OAuth2ViewController *oauth2Controller = [[OAuth2ViewController alloc] init];
+    [self presentViewController:oauth2Controller animated:YES completion:^{NSLog(@"OAUTHORIZE ...");}];
 }
 
 

@@ -47,6 +47,7 @@
 - (void)verifyAuthorizationWithAccessCode:(NSString *)accessCode;
 - (void)refreshAccessToken:(LROAuth2AccessToken *)_accessToken;
 - (void)getDefaultUserProfile:(LROAuth2AccessToken *)_accessToken;
+
 @end
 
 @interface LROAuth2Client (UIWebViewIntegration) <UIWebViewDelegate>

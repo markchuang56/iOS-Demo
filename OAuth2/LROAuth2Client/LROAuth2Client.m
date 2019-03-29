@@ -55,7 +55,7 @@
 
 - (NSURLRequest *)userAuthorizationRequestWithParameters:(NSDictionary *)additionalParameters;
 {
-    DLog(@"user Authorization Reques tWith Parameters");
+    DLog(@"user Authorization Request With Parameters");
     NSDictionary *params = [NSMutableDictionary dictionary];
     [params setValue:@"web_server" forKey:@"type"];
     [params setValue:clientID forKey:@"client_id"];
@@ -181,10 +181,14 @@
 {
     DLog(@"handle completion");
     NSHTTPURLResponse *response = (NSHTTPURLResponse *)operation.URLResponse;
-    
+    DLog(@"http res = %@", response);
     if (response.statusCode == 200) {
         NSError *parserError;
         NSDictionary *authData = [NSJSONSerialization JSONObjectWithData:operation.responseData options:0 error:&parserError];
+        
+        DLog(@"");
+        DLog(@"auth data = %@", authData);
+        DLog(@"");
         
         if (authData == nil) {
             // try and decode the response body as a query string instead

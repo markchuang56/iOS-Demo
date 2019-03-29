@@ -11,6 +11,9 @@
 
 //@interface ViewController : UIViewController
 @interface ViewController : UIViewController <OAuthRequestControllerDelegate>
+@property (weak, nonatomic) IBOutlet UITextView *tokenTextView;
+@property (weak, nonatomic) IBOutlet UILabel *labelUserId;
+@property (weak, nonatomic) IBOutlet UILabel *labelExpiry;
 
 - (IBAction)authorizeTask:(id)sender;
 - (IBAction)getUserProfileTask:(id)sender;

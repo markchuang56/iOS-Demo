@@ -38,6 +38,7 @@
 - (IBAction)sqxBleMeters:(id)sender;
 - (IBAction)sqxCableMeters:(id)sender;
 - (IBAction)sqxPageTest:(id)sender;
+- (IBAction)sqxOAuthTable:(id)sender;
 
 
 + (SQXViewController *)sharedInstance;
