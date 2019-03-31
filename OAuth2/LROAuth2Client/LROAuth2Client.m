@@ -299,7 +299,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
 {
-    DLog(@"web should start load with request");
+    //DLog(@"web should start load with request");
     if ([[request.URL absoluteString] hasPrefix:[self.redirectURL absoluteString]]) {
         NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
         for (NSHTTPCookie *cookie in [storage cookies]) {

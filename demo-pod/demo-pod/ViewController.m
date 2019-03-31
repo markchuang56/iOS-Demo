@@ -8,12 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "ViewController.h"
-//#import "Reachability/Reachability.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <sys/socket.h>
 #import <netinet/in.h>
-
-//#import "Reachability.h"
 
 
 
@@ -138,17 +135,6 @@
     return NO;
 }
 
-/*
-- (void) checkInterNetStatus {
-    Reachability* reachability = [Reachability sharedReachability];
-    [reachability setHostName:@"www.example.com"];    // Set your host name here
-    NetworkStatus remoteHostStatus = [reachability remoteHostStatus];
-    
-    if (remoteHostStatus == NotReachable) { }
-    else if (remoteHostStatus == ReachableViaWiFiNetwork) { }
-    else if (remoteHostStatus == ReachableViaCarrierDataNetwork) { }
-}
-*/
 
 - (IBAction)authorizeTask:(id)sender {
     _tokenTextView.text = [NSString stringWithFormat:@"..."];
@@ -157,9 +143,15 @@
     [dictService setObject:@"https://www.fitbit.com/oauth2/authorize" forKey:kOAuth_AuthorizeURL];
     [dictService setObject:@"https://api.fitbit.com/oauth2/token" forKey:kOAuth_TokenURL];
     
+    [dictService setObject:@"22DCQD" forKey:kOAuth_ClientId];
+    [dictService setObject:@"581a9e35b556660236ec84d13acebe31" forKey:kOAuth_Secret];
+    [dictService setObject:@"https://www.health2sync.com/fitbit_cb" forKey:kOAuth_Callback];
+    /*
+     // demo use
     [dictService setObject:@"22DD2F" forKey:kOAuth_ClientId];
     [dictService setObject:@"a62ee79d8e9ab5b3f6e99c6a775a16b5" forKey:kOAuth_Secret];
     [dictService setObject:@"https://fathomless-shore-18884.herokuapp.com/callback" forKey:kOAuth_Callback];
+    */
     
     [dictService setObject:@"activity heartrate location nutrition profile" forKey:kOAuth_Scope];
     
@@ -180,48 +172,39 @@
 
 
 - (void)fitbitTokenTask:(id)sender {
-    DLog(@"and this  = %@", strUserid);
-    DLog(@"and this  = %@", strExpiry);
+    //DLog(@"and this  = %@", strUserid);
+    //DLog(@"and this  = %@", strExpiry);
     _labelUserId.text = strUserid;
-    
-    
     _labelExpiry.text = strExpiry;
-    
-    
     DLog(@"FITBIT TOKEN BACK!!");
 }
 #pragma mark - Delegate
 
 - (void)didAuthorized:(NSDictionary *)dictResponse {
+    /*
     DLog(@"AUTHORIZED ... DID ...");
     DLog(@"%@", dictResponse);
     DLog(@"%@", [dictResponse objectForKey: @"kOAuth_UID"]);
     DLog(@"%@", [dictResponse objectForKey: @"kOAuth_ExpiredDate"]);
     DLog(@"%@", [dictResponse objectForKey: @"kOAuth_RefreshToken"]);
-    
-    //DLog(@"abc = %@", strUserid);
-    //strExpiry = [dictResponse objectForKey: @"kOAuth_ExpiredDate"];
-    
-    
-    
-    //_tokenTextView.text = @"what happen ...";
-    /*
-    _tokenTextView.text = [dictResponse objectForKey: @"kOAuth_UID"];
-    _tokenTextView.text = [_tokenTextView.text stringByAppendingString:@"\n"];
-    _tokenTextView.text = [_tokenTextView.text stringByAppendingString:[dictResponse objectForKey: @"kOAuth_ExpiredDate"]];
-    _tokenTextView.text = [_tokenTextView.text stringByAppendingString:@"\n"];
-    _tokenTextView.text = [_tokenTextView.text stringByAppendingString:[dictResponse objectForKey: @"kOAuth_RefreshToken"]];
-     */
+    */
 }
 
 - (void)didGetUserProfile:(NSDictionary *)dictResponse {
     DLog(@"Profile come back ...");
     DLog(@"%@", dictResponse);
-    
+    /*
+    DLog(@"%@", [dictResponse objectForKey: @"kOAuth_UID"]);
+    DLog(@"%@", [dictResponse objectForKey: @"kOAuth_RefreshToken"]);
+    DLog(@"%@", [dictResponse objectForKey: @"kOAuth_UID"]);
+    DLog(@"%@", [dictResponse objectForKey: @"kOAuth_ExpiredDate"]);
+    DLog(@"%@", [dictResponse objectForKey: @"kOAuth_AccessToken"]);
+    */
     NSString *strTmp = [dictResponse objectForKey: @"kOAuth_UID"];
     strUserid = [NSString stringWithFormat:@"%@", strTmp];
-    
     strExpiry = [dictResponse objectForKey: @"kOAuth_RefreshToken"];
+    
+    
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"TOKEN_BACK" object:self];
 }

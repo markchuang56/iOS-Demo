@@ -22,10 +22,15 @@
 @synthesize authResponseData;
 @synthesize expiresAt;
 
+@dynamic expiresIn;
+@dynamic tokenType;
+
+
 - (id)initWithAuthorizationResponse:(NSDictionary *)data;
 {
     if (self = [super init]) {
         authResponseData = [data copy];
+        NSLog(@"RESPONSE DATA = %@", authResponseData);
         [self extractExpiresAtFromResponse];
     }
     return self;
@@ -44,6 +49,8 @@
 
 - (void)refreshFromAuthorizationResponse:(NSDictionary *)data;
 {
+    DLog(@"refresh ...");
+    DLog(@"REF = %@", data);
     NSMutableDictionary *tokenData = [self.authResponseData mutableCopy];
     
     [tokenData setObject:[data valueForKey:@"access_token"] forKey:@"access_token"];
@@ -73,6 +80,17 @@
 {
     return [authResponseData objectForKey:@"refresh_token"];
 }
+
+- (NSString *)expiresIn
+{
+    return [authResponseData objectForKey:@"expires_in"];
+}
+
+- (NSString *)tokenType
+{
+    return [authResponseData objectForKey:@"token_type"];
+}
+
 
 #pragma mark -
 #pragma mark NSCoding

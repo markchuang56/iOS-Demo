@@ -20,4 +20,7 @@
 #define kOAuth_TokenURL                 @"kOAuth_TokenURL"
 #define kOAuth_Scope                    @"kOAuth_Scope"
 
+#define kOAuth_ExpiresIn                @"kOAuth_ExpiresIn"
+#define kOAuth_TokenType                @"kOAuth_TokenType"
+
 #endif

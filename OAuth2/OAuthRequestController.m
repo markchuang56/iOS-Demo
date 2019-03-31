@@ -87,6 +87,9 @@
         [_dictValues setObject:VALID(client.refreshToken, NSString)?client.refreshToken:@"" forKey:kOAuth_RefreshToken];
         [_dictValues setObject:VALID(client.expiresAt, NSDate)?client.expiresAt:@"" forKey:kOAuth_ExpiredDate];
         
+        [_dictValues setObject:VALID(client.expiresIn, NSString)?client.expiresIn:@"" forKey:kOAuth_ExpiresIn];
+        [_dictValues setObject:VALID(client.tokenType, NSString)?client.tokenType:@"" forKey:kOAuth_TokenType];
+        
         [_delegate didAuthorized:_dictValues];
     }
 }
@@ -102,6 +105,9 @@
         @"kOAuth_RefreshToken": [_dictValues objectForKey:@"kOAuth_RefreshToken"],
         @"kOAuth_ExpiredDate": [_dictValues objectForKey:@"kOAuth_ExpiredDate"],
         @"kOAuth_UID": uid,
+        
+        @"kOAuth_ExpiresIn": [_dictValues objectForKey:@"kOAuth_ExpiresIn"],
+        @"kOAuth_TokenType": [_dictValues objectForKey:@"kOAuth_TokenType"],
     };
     
     
@@ -130,6 +136,10 @@
 - (void)oauthClientDidReceiveAccessToken:(LROAuth2Client *)client
 {
     DLog(@"--- Did Receive Access Token ---");
+    DLog(@"HOW ... CLIENT = %@", client.accessToken);
+    //DLog(@"CLIENT = %@", client.);
+    //DLog(@"CLIENT = %@", client.accessToken);
+    //DLog(@"CLIENT = %@", client.accessToken);
     //[[NSNotificationCenter defaultCenter] postNotificationName:@"OAuthReceivedAccessTokenNotification" object:client.accessToken];
     [self sendBackOAuth2Data:client.accessToken];
     
