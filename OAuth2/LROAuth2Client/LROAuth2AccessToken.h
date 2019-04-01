@@ -12,11 +12,13 @@
 @interface LROAuth2AccessToken : UIView <NSCoding> {
     NSDictionary *authResponseData;
     NSDate *expiresAt;
+    NSString *unixTimeStamp;
 }
 @property (unsafe_unretained, nonatomic, readonly) NSString *accessToken;
 @property (unsafe_unretained, nonatomic, readonly) NSString *refreshToken;
 @property (nonatomic, readonly) NSDate *expiresAt;
-@property (unsafe_unretained, nonatomic, readonly) NSString *expiresIn;
+//@property (unsafe_unretained, nonatomic, readonly) NSString *expiresIn;
+@property (unsafe_unretained, nonatomic) NSString *unixTimeStamp;
 @property (unsafe_unretained, nonatomic, readonly) NSString *tokenType;
 
 - (id)initWithAuthorizationResponse:(NSDictionary *)_data;

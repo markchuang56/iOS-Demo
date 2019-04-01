@@ -22,8 +22,10 @@
 @synthesize authResponseData;
 @synthesize expiresAt;
 
-@dynamic expiresIn;
+//@dynamic expiresIn;
 @dynamic tokenType;
+//@synthesize unixTimeStamp;
+@dynamic unixTimeStamp;
 
 
 - (id)initWithAuthorizationResponse:(NSDictionary *)data;
@@ -66,6 +68,26 @@
     DLog(@"The EXPIRY = %d", [[self.authResponseData objectForKey:@"expires_in"] intValue]);
     NSTimeInterval expiresIn = (NSTimeInterval)[[self.authResponseData objectForKey:@"expires_in"] intValue];
     expiresAt = [[NSDate alloc] initWithTimeIntervalSinceNow:expiresIn];
+    
+    // get current date/time
+    NSDate *today = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss ZZ"];
+    
+    NSString *currentTime = [dateFormatter stringFromDate:today];
+    DLog(@"what's the current time = %@",currentTime);
+    
+    double wz = today.timeIntervalSince1970;
+    DLog(@"fmt Unix Time Stamp = %f", wz);
+    DLog(@"fmt Unix Time Stamp = %f", wz + [[self.authResponseData objectForKey:@"expires_in"] intValue]);
+    wz += [[self.authResponseData objectForKey:@"expires_in"] intValue];
+    NSString *myString = [NSString stringWithFormat:@"%f", wz];
+    DLog(@"VAL = %@", myString);
+    //NSString *subTime = [myString substringWithRange:NSMakeRange(0, 10)];
+    //self.expiresIn = [myString substringWithRange:NSMakeRange(0, 10)];
+    //DLog(@"SUB TIME is = %@", expiresIn);
+    unixTimeStamp = [myString substringWithRange:NSMakeRange(0, 10)];
 }
 
 #pragma mark -
@@ -81,16 +103,26 @@
     return [authResponseData objectForKey:@"refresh_token"];
 }
 
+/*
 - (NSString *)expiresIn
 {
     return [authResponseData objectForKey:@"expires_in"];
 }
+ */
 
 - (NSString *)tokenType
 {
     return [authResponseData objectForKey:@"token_type"];
 }
 
+- (NSString *)unixTimeStamp
+{
+    return unixTimeStamp;
+}
+
+
+
+//kOAuth_UnixTimeStamp
 
 #pragma mark -
 #pragma mark NSCoding

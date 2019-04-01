@@ -87,7 +87,10 @@
         [_dictValues setObject:VALID(client.refreshToken, NSString)?client.refreshToken:@"" forKey:kOAuth_RefreshToken];
         [_dictValues setObject:VALID(client.expiresAt, NSDate)?client.expiresAt:@"" forKey:kOAuth_ExpiredDate];
         
-        [_dictValues setObject:VALID(client.expiresIn, NSString)?client.expiresIn:@"" forKey:kOAuth_ExpiresIn];
+        //[_dictValues setObject:VALID(client.expiresIn, NSString)?client.expiresIn:@"" forKey:kOAuth_ExpiresIn];
+        //[_dictValues setObject: client.unixTimeStamp forKey:kOAuth_UnixTimeStamp];
+        [_dictValues setObject:VALID(client.unixTimeStamp, NSString)?client.unixTimeStamp:@"" forKey:kOAuth_UnixTimeStamp];
+        
         [_dictValues setObject:VALID(client.tokenType, NSString)?client.tokenType:@"" forKey:kOAuth_TokenType];
         
         [_delegate didAuthorized:_dictValues];
@@ -99,14 +102,14 @@
     
     NSDictionary *userData = [[NSDictionary alloc] init];
     userData = @{
-        //@"kOAuth_UID": uid,
-        @"kOAuth_AccessToken": [_dictValues objectForKey:@"kOAuth_AccessToken"],
-        //@"kOAuth_UID": uid,
-        @"kOAuth_RefreshToken": [_dictValues objectForKey:@"kOAuth_RefreshToken"],
-        @"kOAuth_ExpiredDate": [_dictValues objectForKey:@"kOAuth_ExpiredDate"],
+        @"kOAuth_API": @"v1",
         @"kOAuth_UID": uid,
+        @"kOAuth_AccessToken": [_dictValues objectForKey:@"kOAuth_AccessToken"],
+        @"kOAuth_RefreshToken": [_dictValues objectForKey:@"kOAuth_RefreshToken"],
+        //@"kOAuth_ExpiredDate": [_dictValues objectForKey:@"kOAuth_ExpiredDate"],
         
-        @"kOAuth_ExpiresIn": [_dictValues objectForKey:@"kOAuth_ExpiresIn"],
+        //@"kOAuth_UnixTimeStamp": [_dictValues objectForKey:@"kOAuth_UnixTimeStamp"],
+        @"kOAuth_ExpiredTime": [_dictValues objectForKey:@"kOAuth_UnixTimeStamp"],
         @"kOAuth_TokenType": [_dictValues objectForKey:@"kOAuth_TokenType"],
     };
     

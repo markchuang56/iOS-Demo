@@ -25,6 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+#if 0
     // Do any additional setup after loading the view, typically from a nib.
     //checkInterNetStatus();
     //DLog(@"UNIX TIME STAMP = %p", NSDate.date.timeIntervalSince1970);
@@ -63,7 +64,7 @@
     
     double wz = today.timeIntervalSince1970;
     DLog(@"Unix Time Stamp = %f", wz);
-    
+#endif
   /*
     NSDate *SB = [[NSDate alloc] init];
     //#ifdef DEBUG_BP
