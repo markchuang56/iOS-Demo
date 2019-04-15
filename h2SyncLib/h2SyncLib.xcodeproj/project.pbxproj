@@ -1,0 +1,1234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		142122811D3639D000AA8F88 /* UniversalLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 142122841D3639D100AA8F88 /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
+			buildPhases = (
+				142122851D3639E200AA8F88 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalLib;
+			productName = UniversalLib;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		143D8FF01F78BF9700714E27 /* H2BleBgm.m in Sources */ = {isa = PBXBuildFile; fileRef = 143D8FEF1F78BF9700714E27 /* H2BleBgm.m */; };
+		1449B8D01FE1246B000F4A0B /* H2EquipID.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1449B8CF1FE11A7A000F4A0B /* H2EquipID.h */; };
+		1478AD011ED2CC4C004C271D /* ForaD40.m in Sources */ = {isa = PBXBuildFile; fileRef = 1478ACFD1ED2CC4C004C271D /* ForaD40.m */; };
+		1478AD021ED2CC4C004C271D /* ForaW310.m in Sources */ = {isa = PBXBuildFile; fileRef = 1478ACFE1ED2CC4C004C271D /* ForaW310.m */; };
+		1480E4B71DDC55EC00BF7671 /* GlucoseReadingContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1480E4B61DDC55EC00BF7671 /* GlucoseReadingContext.m */; };
+		1498490E1EE2669700D78521 /* H2Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498490D1EE2669700D78521 /* H2Timer.m */; };
+		14A8DF771FA87256007D6A13 /* Gm700sb.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A8DF761FA87256007D6A13 /* Gm700sb.m */; };
+		14A8DF7A1FA87266007D6A13 /* BleBgm.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A8DF791FA87266007D6A13 /* BleBgm.m */; };
+		14A8DF881FA877B9007D6A13 /* BleDidConnectPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A8DF821FA877B9007D6A13 /* BleDidConnectPeripheral.m */; };
+		14A8DF891FA877B9007D6A13 /* BleDidDiscoverCharacteristics.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A8DF831FA877B9007D6A13 /* BleDidDiscoverCharacteristics.m */; };
+		14A8DF8A1FA877B9007D6A13 /* BleDidDiscoverPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A8DF841FA877B9007D6A13 /* BleDidDiscoverPeripheral.m */; };
+		14A8DF8B1FA877B9007D6A13 /* BleDidDiscoverServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A8DF851FA877B9007D6A13 /* BleDidDiscoverServices.m */; };
+		14A8DF8C1FA877B9007D6A13 /* BleDidUpdateNotificationState.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A8DF861FA877B9007D6A13 /* BleDidUpdateNotificationState.m */; };
+		14A8DF8D1FA877B9007D6A13 /* BleDidUpdateValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A8DF871FA877B9007D6A13 /* BleDidUpdateValue.m */; };
+		14B6EDE21EC46A7200D18715 /* H2BgmTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6EDE11EC46A7200D18715 /* H2BgmTable.m */; };
+		14B6EDE51EC46AB600D18715 /* H2Records.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6EDE41EC46AB600D18715 /* H2Records.m */; };
+		14B6EDE61EC5927500D18715 /* H2Records.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14B6EDE31EC46AB600D18715 /* H2Records.h */; };
+		14BB331A1EBC8A7800280C92 /* ROConfirm.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33151EBC8A7800280C92 /* ROConfirm.m */; };
+		14BB331B1EBC8A7800280C92 /* H2GlucoCardEventProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33161EBC8A7800280C92 /* H2GlucoCardEventProcess.m */; };
+		14BB331C1EBC8A7800280C92 /* GlucoCardVital.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33191EBC8A7800280C92 /* GlucoCardVital.m */; };
+		14BB33231EBC8AAC00280C92 /* H2iCareSensEventProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB331D1EBC8AAC00280C92 /* H2iCareSensEventProcess.m */; };
+		14BB33241EBC8AAC00280C92 /* CareSensN.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB331E1EBC8AAC00280C92 /* CareSensN.m */; };
+		14BB33251EBC8AAC00280C92 /* OmnisEmbracePro.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB331F1EBC8AAC00280C92 /* OmnisEmbracePro.m */; };
+		14BB33331EBC8ADD00280C92 /* Omnis.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB332F1EBC8ADD00280C92 /* Omnis.m */; };
+		14BB33341EBC8ADD00280C92 /* H2ApexBioEventProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33311EBC8ADD00280C92 /* H2ApexBioEventProcess.m */; };
+		14BB333B1EBC8B0500280C92 /* H2RocheEventProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33351EBC8B0500280C92 /* H2RocheEventProcess.m */; };
+		14BB333C1EBC8B0500280C92 /* ACAviva.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33381EBC8B0500280C92 /* ACAviva.m */; };
+		14BB333D1EBC8B0500280C92 /* ACCompactPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33391EBC8B0500280C92 /* ACCompactPlus.m */; };
+		14BB33421EBC8B1F00280C92 /* H2BayerEventProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB333E1EBC8B1F00280C92 /* H2BayerEventProcess.m */; };
+		14BB33431EBC8B1F00280C92 /* JJBayerContour.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33401EBC8B1F00280C92 /* JJBayerContour.m */; };
+		14BB334A1EBC8B4B00280C92 /* H2OneTouchEventProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33441EBC8B4B00280C92 /* H2OneTouchEventProcess.m */; };
+		14BB334B1EBC8B4C00280C92 /* LSOneTouchUltraMini.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33451EBC8B4B00280C92 /* LSOneTouchUltraMini.m */; };
+		14BB334C1EBC8B4C00280C92 /* LSOneTouchUltra2.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33461EBC8B4B00280C92 /* LSOneTouchUltra2.m */; };
+		14BB33511EBC8B6700280C92 /* H2FreeStyleEventProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB334D1EBC8B6700280C92 /* H2FreeStyleEventProcess.m */; };
+		14BB33521EBC8B6700280C92 /* FreeStyleLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB334E1EBC8B6700280C92 /* FreeStyleLite.m */; };
+		14BB33551EBC8B7D00280C92 /* Fora.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33531EBC8B7D00280C92 /* Fora.m */; };
+		14BB335A1EBC8B8A00280C92 /* Bionime.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33571EBC8B8A00280C92 /* Bionime.m */; };
+		14BB335B1EBC8B8A00280C92 /* H2BionimeEventProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33581EBC8B8A00280C92 /* H2BionimeEventProcess.m */; };
+		14BB335E1EBC8BB800280C92 /* LSOneTouchUltraVUE.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB335C1EBC8BB800280C92 /* LSOneTouchUltraVUE.m */; };
+		14C3BA321ED0310A00D590C2 /* H2LastDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C3BA301ED0310A00D590C2 /* H2LastDateTime.m */; };
+		14C512261F4D305700A284FB /* H2Omron.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C512251F4D305700A284FB /* H2Omron.m */; };
+		14CA19251EC0279A00A7B277 /* benechek.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA191F1EC0279A00A7B277 /* benechek.m */; };
+		14CA19261EC0279A00A7B277 /* H2BeneChekEventProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA19201EC0279A00A7B277 /* H2BeneChekEventProcess.m */; };
+		14CA19271EC0279A00A7B277 /* Hmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA19221EC0279A00A7B277 /* Hmd.m */; };
+		14CA192C1EC035AA00A7B277 /* H2BleEquipId.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA19281EC035AA00A7B277 /* H2BleEquipId.m */; };
+		14CA192D1EC035AA00A7B277 /* H2BleProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA19291EC035AA00A7B277 /* H2BleProfile.m */; };
+		14CA19301EC06D4B00A7B277 /* H2CableFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA192F1EC06D4B00A7B277 /* H2CableFlow.m */; };
+		14CA19331EC17FA800A7B277 /* H2DataFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA19321EC17FA800A7B277 /* H2DataFlow.m */; };
+		14CA19361EC1B38C00A7B277 /* H2AudioHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA19351EC1B38C00A7B277 /* H2AudioHelper.m */; };
+		14CA19371EC2C04F00A7B277 /* H2AudioHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14CA19341EC1B38C00A7B277 /* H2AudioHelper.h */; };
+		14CA193D1EC40A9D00A7B277 /* BPMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA193B1EC40A9D00A7B277 /* BPMViewController.m */; };
+		14CA19481EC40ACF00A7B277 /* OMRON_HBF-254C.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA193E1EC40ACF00A7B277 /* OMRON_HBF-254C.m */; };
+		14CA19491EC40ACF00A7B277 /* ARKRAY_GT-1830.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA19401EC40ACF00A7B277 /* ARKRAY_GT-1830.m */; };
+		14CA194B1EC40ACF00A7B277 /* OMRON_HEM-9200T.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA19451EC40ACF00A7B277 /* OMRON_HEM-9200T.m */; };
+		14CA194C1EC40ACF00A7B277 /* OMRON_HEM-7280T.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CA19471EC40ACF00A7B277 /* OMRON_HEM-7280T.m */; };
+		14CA194D1EC41E0800A7B277 /* H2BleEquipId.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14CA192A1EC035AA00A7B277 /* H2BleEquipId.h */; };
+		14E917C01C474AEC0063BB20 /* ScannedPeripheral.h in Resources */ = {isa = PBXBuildFile; fileRef = 14E917B91C463E2C0063BB20 /* ScannedPeripheral.h */; };
+		14E917C11C474B160063BB20 /* h2MeterRecordInfo.h in Resources */ = {isa = PBXBuildFile; fileRef = CB01FA9B1A4445B6009CECBB /* h2MeterRecordInfo.h */; };
+		14E917C21C474B2F0063BB20 /* H2Sync.h in Resources */ = {isa = PBXBuildFile; fileRef = CB01FA9D1A4445B7009CECBB /* H2Sync.h */; };
+		14E917D01C474E630063BB20 /* ScannedPeripheral.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14E917B91C463E2C0063BB20 /* ScannedPeripheral.h */; };
+		14E917D11C474E770063BB20 /* h2MeterRecordInfo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB01FA9B1A4445B6009CECBB /* h2MeterRecordInfo.h */; };
+		14E917D31C4755190063BB20 /* ScannedPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E917BA1C463E2C0063BB20 /* ScannedPeripheral.m */; };
+		14E917D41C4755190063BB20 /* ApexGlucoseReading.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E917B61C45F5220063BB20 /* ApexGlucoseReading.m */; };
+		14E917D51C4755190063BB20 /* GlucoseReading.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4B9AF1C3B7CBD00148E21 /* GlucoseReading.m */; };
+		14E917D61C4755190063BB20 /* CharacteristicReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4B9B31C3B7CE100148E21 /* CharacteristicReader.m */; };
+		14E917D71C4755190063BB20 /* h2CmdInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CB01FA9A1A4445B6009CECBB /* h2CmdInfo.m */; };
+		14E917D81C4755190063BB20 /* H2Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 140013041B7CF1B300F3ECF9 /* H2Config.m */; };
+		14E917D91C4755190063BB20 /* H2Report.m in Sources */ = {isa = PBXBuildFile; fileRef = 1400130A1B7DEA8B00F3ECF9 /* H2Report.m */; };
+		14E917DA1C4755190063BB20 /* H2SystemEventProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1400130D1B7EF87900F3ECF9 /* H2SystemEventProcess.m */; };
+		14E917DB1C4755190063BB20 /* H2SMHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 140013391B7F7E9E00F3ECF9 /* H2SMHeader.m */; };
+		14E917DC1C4755190063BB20 /* H2AudioFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = CB01FA881A4445B6009CECBB /* H2AudioFacade.m */; };
+		14E917DD1C4755190063BB20 /* H2AudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CB01FA961A4445B6009CECBB /* H2AudioSession.m */; };
+		14E917DE1C4755190063BB20 /* H2BleCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14911FAF1B37BCA0003EB30D /* H2BleCentralManager.m */; };
+		14E917DF1C4755190063BB20 /* H2BleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 14911FB11B37BCA0003EB30D /* H2BleService.m */; };
+		14E917E01C4755190063BB20 /* H2BleHmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DFCF231BE0DA3A00776AEA /* H2BleHmd.m */; };
+		14E917E21C4755190063BB20 /* BleBtm.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EFA1661C2A83BF00620695 /* BleBtm.m */; };
+		14E917E31C4755190063BB20 /* H2BleOad.m in Sources */ = {isa = PBXBuildFile; fileRef = 141CBC161C0BFBD900740513 /* H2BleOad.m */; };
+		14E917E41C4755190063BB20 /* H2BgmCable.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4B9B71C3E526A00148E21 /* H2BgmCable.m */; };
+		14E917FC1C4755190063BB20 /* h2MeterRecordInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CB01FA9C1A4445B7009CECBB /* h2MeterRecordInfo.m */; };
+		14E917FD1C4755190063BB20 /* H2Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = CB01FA9E1A4445B7009CECBB /* H2Sync.m */; };
+		14E917FE1C4755190063BB20 /* VirtualRingBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB01FAAF1A4445B7009CECBB /* VirtualRingBuffer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14E917FF1C4755190063BB20 /* h2BrandModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB01FA981A4445B6009CECBB /* h2BrandModel.m */; };
+		14E918001C4755190063BB20 /* version.m in Sources */ = {isa = PBXBuildFile; fileRef = CB01FAAD1A4445B7009CECBB /* version.m */; };
+		14E918031C47595A0063BB20 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB589B661A47BC9A0041E0DE /* AudioToolbox.framework */; };
+		14E918041C47595A0063BB20 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF58C0A1A4A9D4F00B03818 /* AudioUnit.framework */; };
+		14E918051C47595A0063BB20 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB589B691A47BCF60041E0DE /* CoreAudio.framework */; };
+		14E918061C47595A0063BB20 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14911FB41B37F180003EB30D /* CoreBluetooth.framework */; };
+		14E918071C47595A0063BB20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB589B6B1A47BD020041E0DE /* Foundation.framework */; };
+		14E918091C4779360063BB20 /* H2Sync.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB01FA9D1A4445B7009CECBB /* H2Sync.h */; };
+		14F7AF1D1F4C0A700034C675 /* H2BleTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7AF1C1F4C0A700034C675 /* H2BleTimer.m */; };
+		4A140187215A16FB004EB05C /* AndUA651BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A140186215A16FA004EB05C /* AndUA651BLE.m */; };
+		4A2B7C6221B15801006C7E2E /* BWSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B7C6021B15801006C7E2E /* BWSViewController.m */; };
+		4A3143D02133F72E0040C0CD /* MicroLife.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3143CF2133F72E0040C0CD /* MicroLife.m */; };
+		4A3143D32133F7840040C0CD /* RocheSetInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3143D22133F7840040C0CD /* RocheSetInfo.m */; };
+		4A554CA221087924002C38F5 /* OneTouchPlusFlex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A554CA121087924002C38F5 /* OneTouchPlusFlex.m */; };
+		4AEFD6AC213F850600D3ADED /* AllianceDSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFD6AB213F850600D3ADED /* AllianceDSA.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14E917C51C474E340063BB20 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1449B8D01FE1246B000F4A0B /* H2EquipID.h in CopyFiles */,
+				14B6EDE61EC5927500D18715 /* H2Records.h in CopyFiles */,
+				14CA194D1EC41E0800A7B277 /* H2BleEquipId.h in CopyFiles */,
+				14CA19371EC2C04F00A7B277 /* H2AudioHelper.h in CopyFiles */,
+				14E918091C4779360063BB20 /* H2Sync.h in CopyFiles */,
+				14E917D11C474E770063BB20 /* h2MeterRecordInfo.h in CopyFiles */,
+				14E917D01C474E630063BB20 /* ScannedPeripheral.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		140013031B7CF1B300F3ECF9 /* H2Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2Config.h; path = h2SyncLib/H2Config.h; sourceTree = "<group>"; };
+		140013041B7CF1B300F3ECF9 /* H2Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2Config.m; path = h2SyncLib/H2Config.m; sourceTree = "<group>"; };
+		140013091B7DEA8B00F3ECF9 /* H2Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2Report.h; path = h2SyncLib/H2Report.h; sourceTree = "<group>"; };
+		1400130A1B7DEA8B00F3ECF9 /* H2Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2Report.m; path = h2SyncLib/H2Report.m; sourceTree = "<group>"; };
+		1400130C1B7EF87900F3ECF9 /* H2SystemEventProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2SystemEventProcess.h; path = h2SyncLib/H2SystemEventProcess.h; sourceTree = "<group>"; };
+		1400130D1B7EF87900F3ECF9 /* H2SystemEventProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2SystemEventProcess.m; path = h2SyncLib/H2SystemEventProcess.m; sourceTree = "<group>"; };
+		140013381B7F7E9E00F3ECF9 /* H2SMHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H2SMHeader.h; sourceTree = "<group>"; };
+		140013391B7F7E9E00F3ECF9 /* H2SMHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H2SMHeader.m; sourceTree = "<group>"; };
+		141CBC151C0BFBD900740513 /* H2BleOad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BleOad.h; path = h2SyncLib/H2BleOad.h; sourceTree = "<group>"; };
+		141CBC161C0BFBD900740513 /* H2BleOad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BleOad.m; path = h2SyncLib/H2BleOad.m; sourceTree = "<group>"; };
+		143D8FEE1F78BF9700714E27 /* H2BleBgm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BleBgm.h; path = BLE/H2BleBgm.h; sourceTree = "<group>"; };
+		143D8FEF1F78BF9700714E27 /* H2BleBgm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BleBgm.m; path = BLE/H2BleBgm.m; sourceTree = "<group>"; };
+		1449B8CF1FE11A7A000F4A0B /* H2EquipID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H2EquipID.h; sourceTree = "<group>"; };
+		1478ACFD1ED2CC4C004C271D /* ForaD40.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForaD40.m; path = BLE_VENDOR/FORA_MTI/ForaD40.m; sourceTree = "<group>"; };
+		1478ACFE1ED2CC4C004C271D /* ForaW310.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForaW310.m; path = BLE_VENDOR/FORA_MTI/ForaW310.m; sourceTree = "<group>"; };
+		1478ACFF1ED2CC4C004C271D /* ForaD40.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForaD40.h; path = BLE_VENDOR/FORA_MTI/ForaD40.h; sourceTree = "<group>"; };
+		1478AD001ED2CC4C004C271D /* ForaW310.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForaW310.h; path = BLE_VENDOR/FORA_MTI/ForaW310.h; sourceTree = "<group>"; };
+		1480E4B51DDC55EC00BF7671 /* GlucoseReadingContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlucoseReadingContext.h; path = nRF/BGM/GlucoseReadingContext.h; sourceTree = "<group>"; };
+		1480E4B61DDC55EC00BF7671 /* GlucoseReadingContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlucoseReadingContext.m; path = nRF/BGM/GlucoseReadingContext.m; sourceTree = "<group>"; };
+		14911FAE1B37BCA0003EB30D /* H2BleCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BleCentralManager.h; path = h2SyncLib/H2BleCentralManager.h; sourceTree = "<group>"; };
+		14911FAF1B37BCA0003EB30D /* H2BleCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BleCentralManager.m; path = h2SyncLib/H2BleCentralManager.m; sourceTree = "<group>"; };
+		14911FB01B37BCA0003EB30D /* H2BleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BleService.h; path = h2SyncLib/H2BleService.h; sourceTree = "<group>"; };
+		14911FB11B37BCA0003EB30D /* H2BleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BleService.m; path = h2SyncLib/H2BleService.m; sourceTree = "<group>"; };
+		14911FB41B37F180003EB30D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1498490C1EE2669700D78521 /* H2Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2Timer.h; path = SYSTEM/H2Timer.h; sourceTree = "<group>"; };
+		1498490D1EE2669700D78521 /* H2Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2Timer.m; path = SYSTEM/H2Timer.m; sourceTree = "<group>"; };
+		14A8DF751FA87256007D6A13 /* Gm700sb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gm700sb.h; path = BgmMeter/Bionime/Gm700sb.h; sourceTree = "<group>"; };
+		14A8DF761FA87256007D6A13 /* Gm700sb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gm700sb.m; path = BgmMeter/Bionime/Gm700sb.m; sourceTree = "<group>"; };
+		14A8DF781FA87266007D6A13 /* BleBgm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BleBgm.h; path = BgmMeter/BleBgm.h; sourceTree = "<group>"; };
+		14A8DF791FA87266007D6A13 /* BleBgm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BleBgm.m; path = BgmMeter/BleBgm.m; sourceTree = "<group>"; };
+		14A8DF7C1FA877B9007D6A13 /* BleDidConnectPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BleDidConnectPeripheral.h; path = BLE_SERVICE/BleDidConnectPeripheral.h; sourceTree = "<group>"; };
+		14A8DF7D1FA877B9007D6A13 /* BleDidDiscoverCharacteristics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BleDidDiscoverCharacteristics.h; path = BLE_SERVICE/BleDidDiscoverCharacteristics.h; sourceTree = "<group>"; };
+		14A8DF7E1FA877B9007D6A13 /* BleDidDiscoverPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BleDidDiscoverPeripheral.h; path = BLE_SERVICE/BleDidDiscoverPeripheral.h; sourceTree = "<group>"; };
+		14A8DF7F1FA877B9007D6A13 /* BleDidDiscoverServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BleDidDiscoverServices.h; path = BLE_SERVICE/BleDidDiscoverServices.h; sourceTree = "<group>"; };
+		14A8DF801FA877B9007D6A13 /* BleDidUpdateNotificationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BleDidUpdateNotificationState.h; path = BLE_SERVICE/BleDidUpdateNotificationState.h; sourceTree = "<group>"; };
+		14A8DF811FA877B9007D6A13 /* BleDidUpdateValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BleDidUpdateValue.h; path = BLE_SERVICE/BleDidUpdateValue.h; sourceTree = "<group>"; };
+		14A8DF821FA877B9007D6A13 /* BleDidConnectPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BleDidConnectPeripheral.m; path = BLE_SERVICE/BleDidConnectPeripheral.m; sourceTree = "<group>"; };
+		14A8DF831FA877B9007D6A13 /* BleDidDiscoverCharacteristics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BleDidDiscoverCharacteristics.m; path = BLE_SERVICE/BleDidDiscoverCharacteristics.m; sourceTree = "<group>"; };
+		14A8DF841FA877B9007D6A13 /* BleDidDiscoverPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BleDidDiscoverPeripheral.m; path = BLE_SERVICE/BleDidDiscoverPeripheral.m; sourceTree = "<group>"; };
+		14A8DF851FA877B9007D6A13 /* BleDidDiscoverServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BleDidDiscoverServices.m; path = BLE_SERVICE/BleDidDiscoverServices.m; sourceTree = "<group>"; };
+		14A8DF861FA877B9007D6A13 /* BleDidUpdateNotificationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BleDidUpdateNotificationState.m; path = BLE_SERVICE/BleDidUpdateNotificationState.m; sourceTree = "<group>"; };
+		14A8DF871FA877B9007D6A13 /* BleDidUpdateValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BleDidUpdateValue.m; path = BLE_SERVICE/BleDidUpdateValue.m; sourceTree = "<group>"; };
+		14AFE39D1FCBEF0800C777A7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = h2Lib/PrefixHeader.pch; sourceTree = "<group>"; };
+		14B6EDE01EC46A7200D18715 /* H2BgmTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BgmTable.h; path = SYSTEM/H2BgmTable.h; sourceTree = "<group>"; };
+		14B6EDE11EC46A7200D18715 /* H2BgmTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BgmTable.m; path = SYSTEM/H2BgmTable.m; sourceTree = "<group>"; };
+		14B6EDE31EC46AB600D18715 /* H2Records.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2Records.h; path = SYSTEM/H2Records.h; sourceTree = "<group>"; };
+		14B6EDE41EC46AB600D18715 /* H2Records.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2Records.m; path = SYSTEM/H2Records.m; sourceTree = "<group>"; };
+		14BB33141EBC8A7800280C92 /* H2GlucoCardEventProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2GlucoCardEventProcess.h; path = UART/GlucoCard/H2GlucoCardEventProcess.h; sourceTree = "<group>"; };
+		14BB33151EBC8A7800280C92 /* ROConfirm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROConfirm.m; path = UART/GlucoCard/ROConfirm.m; sourceTree = "<group>"; };
+		14BB33161EBC8A7800280C92 /* H2GlucoCardEventProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2GlucoCardEventProcess.m; path = UART/GlucoCard/H2GlucoCardEventProcess.m; sourceTree = "<group>"; };
+		14BB33171EBC8A7800280C92 /* ROConfirm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROConfirm.h; path = UART/GlucoCard/ROConfirm.h; sourceTree = "<group>"; };
+		14BB33181EBC8A7800280C92 /* GlucoCardVital.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlucoCardVital.h; path = UART/GlucoCard/GlucoCardVital.h; sourceTree = "<group>"; };
+		14BB33191EBC8A7800280C92 /* GlucoCardVital.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlucoCardVital.m; path = UART/GlucoCard/GlucoCardVital.m; sourceTree = "<group>"; };
+		14BB331D1EBC8AAC00280C92 /* H2iCareSensEventProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2iCareSensEventProcess.m; path = UART/iCareSens/H2iCareSensEventProcess.m; sourceTree = "<group>"; };
+		14BB331E1EBC8AAC00280C92 /* CareSensN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CareSensN.m; path = UART/iCareSens/CareSensN.m; sourceTree = "<group>"; };
+		14BB331F1EBC8AAC00280C92 /* OmnisEmbracePro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OmnisEmbracePro.m; path = UART/iCareSens/OmnisEmbracePro.m; sourceTree = "<group>"; };
+		14BB33201EBC8AAC00280C92 /* H2iCareSensEventProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2iCareSensEventProcess.h; path = UART/iCareSens/H2iCareSensEventProcess.h; sourceTree = "<group>"; };
+		14BB33211EBC8AAC00280C92 /* OmnisEmbracePro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OmnisEmbracePro.h; path = UART/iCareSens/OmnisEmbracePro.h; sourceTree = "<group>"; };
+		14BB33221EBC8AAC00280C92 /* CareSensN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CareSensN.h; path = UART/iCareSens/CareSensN.h; sourceTree = "<group>"; };
+		14BB332F1EBC8ADD00280C92 /* Omnis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Omnis.m; path = UART/APEX/Omnis.m; sourceTree = "<group>"; };
+		14BB33301EBC8ADD00280C92 /* Omnis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Omnis.h; path = UART/APEX/Omnis.h; sourceTree = "<group>"; };
+		14BB33311EBC8ADD00280C92 /* H2ApexBioEventProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2ApexBioEventProcess.m; path = UART/APEX/H2ApexBioEventProcess.m; sourceTree = "<group>"; };
+		14BB33321EBC8ADD00280C92 /* H2ApexBioEventProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2ApexBioEventProcess.h; path = UART/APEX/H2ApexBioEventProcess.h; sourceTree = "<group>"; };
+		14BB33351EBC8B0500280C92 /* H2RocheEventProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2RocheEventProcess.m; path = IRDA/ROCHE/H2RocheEventProcess.m; sourceTree = "<group>"; };
+		14BB33361EBC8B0500280C92 /* H2RocheEventProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2RocheEventProcess.h; path = IRDA/ROCHE/H2RocheEventProcess.h; sourceTree = "<group>"; };
+		14BB33371EBC8B0500280C92 /* ACAviva.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACAviva.h; path = IRDA/ROCHE/ACAviva.h; sourceTree = "<group>"; };
+		14BB33381EBC8B0500280C92 /* ACAviva.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACAviva.m; path = IRDA/ROCHE/ACAviva.m; sourceTree = "<group>"; };
+		14BB33391EBC8B0500280C92 /* ACCompactPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCompactPlus.m; path = IRDA/ROCHE/ACCompactPlus.m; sourceTree = "<group>"; };
+		14BB333A1EBC8B0500280C92 /* ACCompactPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCompactPlus.h; path = IRDA/ROCHE/ACCompactPlus.h; sourceTree = "<group>"; };
+		14BB333E1EBC8B1F00280C92 /* H2BayerEventProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BayerEventProcess.m; path = UART/BAYER/H2BayerEventProcess.m; sourceTree = "<group>"; };
+		14BB333F1EBC8B1F00280C92 /* H2BayerEventProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BayerEventProcess.h; path = UART/BAYER/H2BayerEventProcess.h; sourceTree = "<group>"; };
+		14BB33401EBC8B1F00280C92 /* JJBayerContour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJBayerContour.m; path = UART/BAYER/JJBayerContour.m; sourceTree = "<group>"; };
+		14BB33411EBC8B1F00280C92 /* JJBayerContour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJBayerContour.h; path = UART/BAYER/JJBayerContour.h; sourceTree = "<group>"; };
+		14BB33441EBC8B4B00280C92 /* H2OneTouchEventProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2OneTouchEventProcess.m; path = UART/ONETOUCH/H2OneTouchEventProcess.m; sourceTree = "<group>"; };
+		14BB33451EBC8B4B00280C92 /* LSOneTouchUltraMini.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSOneTouchUltraMini.m; path = UART/ONETOUCH/LSOneTouchUltraMini.m; sourceTree = "<group>"; };
+		14BB33461EBC8B4B00280C92 /* LSOneTouchUltra2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSOneTouchUltra2.m; path = UART/ONETOUCH/LSOneTouchUltra2.m; sourceTree = "<group>"; };
+		14BB33471EBC8B4B00280C92 /* LSOneTouchUltra2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSOneTouchUltra2.h; path = UART/ONETOUCH/LSOneTouchUltra2.h; sourceTree = "<group>"; };
+		14BB33481EBC8B4B00280C92 /* H2OneTouchEventProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2OneTouchEventProcess.h; path = UART/ONETOUCH/H2OneTouchEventProcess.h; sourceTree = "<group>"; };
+		14BB33491EBC8B4B00280C92 /* LSOneTouchUltraMini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSOneTouchUltraMini.h; path = UART/ONETOUCH/LSOneTouchUltraMini.h; sourceTree = "<group>"; };
+		14BB334D1EBC8B6700280C92 /* H2FreeStyleEventProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2FreeStyleEventProcess.m; path = UART/FREESTYLE/H2FreeStyleEventProcess.m; sourceTree = "<group>"; };
+		14BB334E1EBC8B6700280C92 /* FreeStyleLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FreeStyleLite.m; path = UART/FREESTYLE/FreeStyleLite.m; sourceTree = "<group>"; };
+		14BB334F1EBC8B6700280C92 /* FreeStyleLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FreeStyleLite.h; path = UART/FREESTYLE/FreeStyleLite.h; sourceTree = "<group>"; };
+		14BB33501EBC8B6700280C92 /* H2FreeStyleEventProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2FreeStyleEventProcess.h; path = UART/FREESTYLE/H2FreeStyleEventProcess.h; sourceTree = "<group>"; };
+		14BB33531EBC8B7D00280C92 /* Fora.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fora.m; path = UART/Fora/Fora.m; sourceTree = "<group>"; };
+		14BB33541EBC8B7D00280C92 /* Fora.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fora.h; path = UART/Fora/Fora.h; sourceTree = "<group>"; };
+		14BB33561EBC8B8A00280C92 /* Bionime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bionime.h; path = UART/BIONIME/Bionime.h; sourceTree = "<group>"; };
+		14BB33571EBC8B8A00280C92 /* Bionime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bionime.m; path = UART/BIONIME/Bionime.m; sourceTree = "<group>"; };
+		14BB33581EBC8B8A00280C92 /* H2BionimeEventProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BionimeEventProcess.m; path = UART/BIONIME/H2BionimeEventProcess.m; sourceTree = "<group>"; };
+		14BB33591EBC8B8A00280C92 /* H2BionimeEventProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BionimeEventProcess.h; path = UART/BIONIME/H2BionimeEventProcess.h; sourceTree = "<group>"; };
+		14BB335C1EBC8BB800280C92 /* LSOneTouchUltraVUE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSOneTouchUltraVUE.m; path = UART/ONETOUCH/LSOneTouchUltraVUE.m; sourceTree = "<group>"; };
+		14BB335D1EBC8BB800280C92 /* LSOneTouchUltraVUE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSOneTouchUltraVUE.h; path = UART/ONETOUCH/LSOneTouchUltraVUE.h; sourceTree = "<group>"; };
+		14C3BA301ED0310A00D590C2 /* H2LastDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2LastDateTime.m; path = SYSTEM/H2LastDateTime.m; sourceTree = "<group>"; };
+		14C3BA311ED0310A00D590C2 /* H2LastDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2LastDateTime.h; path = SYSTEM/H2LastDateTime.h; sourceTree = "<group>"; };
+		14C512241F4D305700A284FB /* H2Omron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2Omron.h; path = BLE_VENDOR/H2Omron.h; sourceTree = "<group>"; };
+		14C512251F4D305700A284FB /* H2Omron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2Omron.m; path = BLE_VENDOR/H2Omron.m; sourceTree = "<group>"; };
+		14CA191F1EC0279A00A7B277 /* benechek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = benechek.m; path = UART/BeneChek/benechek.m; sourceTree = "<group>"; };
+		14CA19201EC0279A00A7B277 /* H2BeneChekEventProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BeneChekEventProcess.m; path = UART/BeneChek/H2BeneChekEventProcess.m; sourceTree = "<group>"; };
+		14CA19211EC0279A00A7B277 /* Hmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hmd.h; path = UART/BeneChek/Hmd.h; sourceTree = "<group>"; };
+		14CA19221EC0279A00A7B277 /* Hmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hmd.m; path = UART/BeneChek/Hmd.m; sourceTree = "<group>"; };
+		14CA19231EC0279A00A7B277 /* benechek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = benechek.h; path = UART/BeneChek/benechek.h; sourceTree = "<group>"; };
+		14CA19241EC0279A00A7B277 /* H2BeneChekEventProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BeneChekEventProcess.h; path = UART/BeneChek/H2BeneChekEventProcess.h; sourceTree = "<group>"; };
+		14CA19281EC035AA00A7B277 /* H2BleEquipId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BleEquipId.m; path = BLE/H2BleEquipId.m; sourceTree = "<group>"; };
+		14CA19291EC035AA00A7B277 /* H2BleProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BleProfile.m; path = BLE/H2BleProfile.m; sourceTree = "<group>"; };
+		14CA192A1EC035AA00A7B277 /* H2BleEquipId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BleEquipId.h; path = BLE/H2BleEquipId.h; sourceTree = "<group>"; };
+		14CA192B1EC035AA00A7B277 /* H2BleProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BleProfile.h; path = BLE/H2BleProfile.h; sourceTree = "<group>"; };
+		14CA192E1EC06D4B00A7B277 /* H2CableFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2CableFlow.h; path = h2Lib/H2CableFlow.h; sourceTree = SOURCE_ROOT; };
+		14CA192F1EC06D4B00A7B277 /* H2CableFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2CableFlow.m; path = h2Lib/H2CableFlow.m; sourceTree = SOURCE_ROOT; };
+		14CA19311EC17FA800A7B277 /* H2DataFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2DataFlow.h; path = h2Lib/H2DataFlow.h; sourceTree = SOURCE_ROOT; };
+		14CA19321EC17FA800A7B277 /* H2DataFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2DataFlow.m; path = h2Lib/H2DataFlow.m; sourceTree = SOURCE_ROOT; };
+		14CA19341EC1B38C00A7B277 /* H2AudioHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2AudioHelper.h; path = h2Lib/H2AudioHelper.h; sourceTree = "<group>"; };
+		14CA19351EC1B38C00A7B277 /* H2AudioHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2AudioHelper.m; path = h2Lib/H2AudioHelper.m; sourceTree = "<group>"; };
+		14CA193B1EC40A9D00A7B277 /* BPMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPMViewController.m; path = nRF/BPM/BPMViewController.m; sourceTree = "<group>"; };
+		14CA193C1EC40A9D00A7B277 /* BPMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPMViewController.h; path = nRF/BPM/BPMViewController.h; sourceTree = "<group>"; };
+		14CA193E1EC40ACF00A7B277 /* OMRON_HBF-254C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "OMRON_HBF-254C.m"; path = "BLE_VENDOR/OMRON_HBF-254C.m"; sourceTree = "<group>"; };
+		14CA193F1EC40ACF00A7B277 /* OMRON_HBF-254C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OMRON_HBF-254C.h"; path = "BLE_VENDOR/OMRON_HBF-254C.h"; sourceTree = "<group>"; };
+		14CA19401EC40ACF00A7B277 /* ARKRAY_GT-1830.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ARKRAY_GT-1830.m"; path = "BLE_VENDOR/ARKRAY_GT-1830.m"; sourceTree = "<group>"; };
+		14CA19421EC40ACF00A7B277 /* ARKRAY_GT-1830.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ARKRAY_GT-1830.h"; path = "BLE_VENDOR/ARKRAY_GT-1830.h"; sourceTree = "<group>"; };
+		14CA19431EC40ACF00A7B277 /* OMRON_HEM-9200T.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OMRON_HEM-9200T.h"; path = "BLE_VENDOR/OMRON_HEM-9200T.h"; sourceTree = "<group>"; };
+		14CA19441EC40ACF00A7B277 /* OMRON_HEM-7280T.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OMRON_HEM-7280T.h"; path = "BLE_VENDOR/OMRON_HEM-7280T.h"; sourceTree = "<group>"; };
+		14CA19451EC40ACF00A7B277 /* OMRON_HEM-9200T.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "OMRON_HEM-9200T.m"; path = "BLE_VENDOR/OMRON_HEM-9200T.m"; sourceTree = "<group>"; };
+		14CA19471EC40ACF00A7B277 /* OMRON_HEM-7280T.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "OMRON_HEM-7280T.m"; path = "BLE_VENDOR/OMRON_HEM-7280T.m"; sourceTree = "<group>"; };
+		14DF414B200DFE0A00D4E6F4 /* OmronDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OmronDef.h; path = BLE_VENDOR/OmronDef.h; sourceTree = "<group>"; };
+		14DF414C2011CB6900D4E6F4 /* StatusCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StatusCode.h; path = h2Lib/StatusCode.h; sourceTree = "<group>"; };
+		14DFCF221BE0DA3A00776AEA /* H2BleHmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H2BleHmd.h; sourceTree = "<group>"; };
+		14DFCF231BE0DA3A00776AEA /* H2BleHmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H2BleHmd.m; sourceTree = "<group>"; };
+		14E4B9AE1C3B7CBD00148E21 /* GlucoseReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlucoseReading.h; path = nRF/BGM/GlucoseReading.h; sourceTree = "<group>"; };
+		14E4B9AF1C3B7CBD00148E21 /* GlucoseReading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlucoseReading.m; path = nRF/BGM/GlucoseReading.m; sourceTree = "<group>"; };
+		14E4B9B01C3B7CBD00148E21 /* RecordAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordAccess.h; path = nRF/BGM/RecordAccess.h; sourceTree = "<group>"; };
+		14E4B9B21C3B7CE100148E21 /* CharacteristicReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharacteristicReader.h; path = nRF/Utilities/CharacteristicReader.h; sourceTree = "<group>"; };
+		14E4B9B31C3B7CE100148E21 /* CharacteristicReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacteristicReader.m; path = nRF/Utilities/CharacteristicReader.m; sourceTree = "<group>"; };
+		14E4B9B41C3B7CE100148E21 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = nRF/Utilities/Constants.h; sourceTree = "<group>"; };
+		14E4B9B61C3E526A00148E21 /* H2BgmCable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BgmCable.h; path = h2SyncLib/H2BgmCable.h; sourceTree = "<group>"; };
+		14E4B9B71C3E526A00148E21 /* H2BgmCable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BgmCable.m; path = h2SyncLib/H2BgmCable.m; sourceTree = "<group>"; };
+		14E917B51C45F5220063BB20 /* ApexGlucoseReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApexGlucoseReading.h; path = nRF/BGM/ApexGlucoseReading.h; sourceTree = "<group>"; };
+		14E917B61C45F5220063BB20 /* ApexGlucoseReading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApexGlucoseReading.m; path = nRF/BGM/ApexGlucoseReading.m; sourceTree = "<group>"; };
+		14E917B91C463E2C0063BB20 /* ScannedPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScannedPeripheral.h; path = nRF/Scanner/ScannedPeripheral.h; sourceTree = "<group>"; };
+		14E917BA1C463E2C0063BB20 /* ScannedPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScannedPeripheral.m; path = nRF/Scanner/ScannedPeripheral.m; sourceTree = "<group>"; };
+		14E917BB1C463E2C0063BB20 /* ScannerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScannerDelegate.h; path = nRF/Scanner/ScannerDelegate.h; sourceTree = "<group>"; };
+		14E917C71C474E340063BB20 /* libh2SyncLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libh2SyncLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		14EFA1651C2A83BF00620695 /* BleBtm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleBtm.h; sourceTree = "<group>"; };
+		14EFA1661C2A83BF00620695 /* BleBtm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleBtm.m; sourceTree = "<group>"; };
+		14F7AF1B1F4C0A700034C675 /* H2BleTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2BleTimer.h; path = BLE/H2BleTimer.h; sourceTree = "<group>"; };
+		14F7AF1C1F4C0A700034C675 /* H2BleTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2BleTimer.m; path = BLE/H2BleTimer.m; sourceTree = "<group>"; };
+		4A140185215A16FA004EB05C /* AndUA651BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AndUA651BLE.h; path = BLE_VENDOR/AndUA651BLE.h; sourceTree = "<group>"; };
+		4A140186215A16FA004EB05C /* AndUA651BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AndUA651BLE.m; path = BLE_VENDOR/AndUA651BLE.m; sourceTree = "<group>"; };
+		4A2B7C6021B15801006C7E2E /* BWSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWSViewController.m; path = nRF/BWS/BWSViewController.m; sourceTree = "<group>"; };
+		4A2B7C6121B15801006C7E2E /* BWSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWSViewController.h; path = nRF/BWS/BWSViewController.h; sourceTree = "<group>"; };
+		4A3143CE2133F72E0040C0CD /* MicroLife.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MicroLife.h; path = BgmMeter/Bionime/MicroLife.h; sourceTree = "<group>"; };
+		4A3143CF2133F72E0040C0CD /* MicroLife.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MicroLife.m; path = BgmMeter/Bionime/MicroLife.m; sourceTree = "<group>"; };
+		4A3143D12133F7840040C0CD /* RocheSetInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RocheSetInfo.h; path = BgmMeter/Bionime/RocheSetInfo.h; sourceTree = "<group>"; };
+		4A3143D22133F7840040C0CD /* RocheSetInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RocheSetInfo.m; path = BgmMeter/Bionime/RocheSetInfo.m; sourceTree = "<group>"; };
+		4A554CA021087924002C38F5 /* OneTouchPlusFlex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OneTouchPlusFlex.h; path = BgmMeter/Bionime/OneTouchPlusFlex.h; sourceTree = "<group>"; };
+		4A554CA121087924002C38F5 /* OneTouchPlusFlex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OneTouchPlusFlex.m; path = BgmMeter/Bionime/OneTouchPlusFlex.m; sourceTree = "<group>"; };
+		4AEFD6AA213F850600D3ADED /* AllianceDSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllianceDSA.h; path = UART/iCareSens/AllianceDSA.h; sourceTree = "<group>"; };
+		4AEFD6AB213F850600D3ADED /* AllianceDSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllianceDSA.m; path = UART/iCareSens/AllianceDSA.m; sourceTree = "<group>"; };
+		CB01FA6E1A4441AE009CECBB /* h2SyncLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = h2SyncLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB01FA741A4441AE009CECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB01FA871A4445B6009CECBB /* H2AudioFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2AudioFacade.h; path = h2Lib/H2AudioFacade.h; sourceTree = "<group>"; };
+		CB01FA881A4445B6009CECBB /* H2AudioFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2AudioFacade.m; path = h2Lib/H2AudioFacade.m; sourceTree = "<group>"; };
+		CB01FA951A4445B6009CECBB /* H2AudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2AudioSession.h; path = h2Lib/H2AudioSession.h; sourceTree = "<group>"; };
+		CB01FA961A4445B6009CECBB /* H2AudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2AudioSession.m; path = h2Lib/H2AudioSession.m; sourceTree = "<group>"; };
+		CB01FA971A4445B6009CECBB /* h2BrandModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = h2BrandModel.h; path = h2Lib/h2BrandModel.h; sourceTree = "<group>"; };
+		CB01FA981A4445B6009CECBB /* h2BrandModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = h2BrandModel.m; path = h2Lib/h2BrandModel.m; sourceTree = "<group>"; };
+		CB01FA991A4445B6009CECBB /* h2CmdInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = h2CmdInfo.h; path = h2Lib/h2CmdInfo.h; sourceTree = "<group>"; };
+		CB01FA9A1A4445B6009CECBB /* h2CmdInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = h2CmdInfo.m; path = h2Lib/h2CmdInfo.m; sourceTree = "<group>"; };
+		CB01FA9B1A4445B6009CECBB /* h2MeterRecordInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = h2MeterRecordInfo.h; path = ../h2Lib/h2MeterRecordInfo.h; sourceTree = "<group>"; };
+		CB01FA9C1A4445B7009CECBB /* h2MeterRecordInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = h2MeterRecordInfo.m; path = ../h2Lib/h2MeterRecordInfo.m; sourceTree = "<group>"; };
+		CB01FA9D1A4445B7009CECBB /* H2Sync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H2Sync.h; path = ../h2Lib/H2Sync.h; sourceTree = "<group>"; };
+		CB01FA9E1A4445B7009CECBB /* H2Sync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H2Sync.m; path = ../h2Lib/H2Sync.m; sourceTree = "<group>"; };
+		CB01FAAC1A4445B7009CECBB /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = h2Lib/version.h; sourceTree = "<group>"; };
+		CB01FAAD1A4445B7009CECBB /* version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = version.m; path = h2Lib/version.m; sourceTree = "<group>"; };
+		CB01FAAE1A4445B7009CECBB /* VirtualRingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VirtualRingBuffer.h; path = ../h2Lib/VirtualRingBuffer.h; sourceTree = "<group>"; };
+		CB01FAAF1A4445B7009CECBB /* VirtualRingBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VirtualRingBuffer.m; path = ../h2Lib/VirtualRingBuffer.m; sourceTree = "<group>"; };
+		CB01FAC91A444AA2009CECBB /* H2DebugHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H2DebugHeader.h; sourceTree = "<group>"; };
+		CB589B661A47BC9A0041E0DE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CB589B691A47BCF60041E0DE /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		CB589B6B1A47BD020041E0DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CBF58C0A1A4A9D4F00B03818 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14E917C41C474E340063BB20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E918031C47595A0063BB20 /* AudioToolbox.framework in Frameworks */,
+				14E918041C47595A0063BB20 /* AudioUnit.framework in Frameworks */,
+				14E918051C47595A0063BB20 /* CoreAudio.framework in Frameworks */,
+				14E918061C47595A0063BB20 /* CoreBluetooth.framework in Frameworks */,
+				14E918071C47595A0063BB20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB01FA6B1A4441AE009CECBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		140013241B7F5B4600F3ECF9 /* Roche */ = {
+			isa = PBXGroup;
+			children = (
+				14BB33351EBC8B0500280C92 /* H2RocheEventProcess.m */,
+				14BB33361EBC8B0500280C92 /* H2RocheEventProcess.h */,
+				14BB33371EBC8B0500280C92 /* ACAviva.h */,
+				14BB33381EBC8B0500280C92 /* ACAviva.m */,
+				14BB33391EBC8B0500280C92 /* ACCompactPlus.m */,
+				14BB333A1EBC8B0500280C92 /* ACCompactPlus.h */,
+			);
+			name = Roche;
+			sourceTree = "<group>";
+		};
+		140013251B7F5B5900F3ECF9 /* Bayer */ = {
+			isa = PBXGroup;
+			children = (
+				14BB333E1EBC8B1F00280C92 /* H2BayerEventProcess.m */,
+				14BB333F1EBC8B1F00280C92 /* H2BayerEventProcess.h */,
+				14BB33401EBC8B1F00280C92 /* JJBayerContour.m */,
+				14BB33411EBC8B1F00280C92 /* JJBayerContour.h */,
+			);
+			name = Bayer;
+			sourceTree = "<group>";
+		};
+		140013261B7F5B7400F3ECF9 /* FreeStyle */ = {
+			isa = PBXGroup;
+			children = (
+				14BB334E1EBC8B6700280C92 /* FreeStyleLite.m */,
+				14BB334F1EBC8B6700280C92 /* FreeStyleLite.h */,
+				14BB334D1EBC8B6700280C92 /* H2FreeStyleEventProcess.m */,
+				14BB33501EBC8B6700280C92 /* H2FreeStyleEventProcess.h */,
+			);
+			name = FreeStyle;
+			sourceTree = "<group>";
+		};
+		140013271B7F5B8400F3ECF9 /* OneTouch */ = {
+			isa = PBXGroup;
+			children = (
+				14BB335C1EBC8BB800280C92 /* LSOneTouchUltraVUE.m */,
+				14BB335D1EBC8BB800280C92 /* LSOneTouchUltraVUE.h */,
+				14BB33441EBC8B4B00280C92 /* H2OneTouchEventProcess.m */,
+				14BB33451EBC8B4B00280C92 /* LSOneTouchUltraMini.m */,
+				14BB33461EBC8B4B00280C92 /* LSOneTouchUltra2.m */,
+				14BB33471EBC8B4B00280C92 /* LSOneTouchUltra2.h */,
+				14BB33481EBC8B4B00280C92 /* H2OneTouchEventProcess.h */,
+				14BB33491EBC8B4B00280C92 /* LSOneTouchUltraMini.h */,
+			);
+			name = OneTouch;
+			sourceTree = "<group>";
+		};
+		140013281B7F5C1D00F3ECF9 /* ApexBio */ = {
+			isa = PBXGroup;
+			children = (
+				14BB332F1EBC8ADD00280C92 /* Omnis.m */,
+				14BB33301EBC8ADD00280C92 /* Omnis.h */,
+				14BB33311EBC8ADD00280C92 /* H2ApexBioEventProcess.m */,
+				14BB33321EBC8ADD00280C92 /* H2ApexBioEventProcess.h */,
+			);
+			name = ApexBio;
+			sourceTree = "<group>";
+		};
+		140013291B7F5C3000F3ECF9 /* Bionime */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Bionime;
+			sourceTree = "<group>";
+		};
+		1400132A1B7F5C4400F3ECF9 /* BeneChek */ = {
+			isa = PBXGroup;
+			children = (
+				14CA191F1EC0279A00A7B277 /* benechek.m */,
+				14CA19201EC0279A00A7B277 /* H2BeneChekEventProcess.m */,
+				14CA19211EC0279A00A7B277 /* Hmd.h */,
+				14CA19221EC0279A00A7B277 /* Hmd.m */,
+				14CA19231EC0279A00A7B277 /* benechek.h */,
+				14CA19241EC0279A00A7B277 /* H2BeneChekEventProcess.h */,
+			);
+			name = BeneChek;
+			sourceTree = "<group>";
+		};
+		1400132B1B7F5C5F00F3ECF9 /* iCareSens */ = {
+			isa = PBXGroup;
+			children = (
+				4AEFD6AA213F850600D3ADED /* AllianceDSA.h */,
+				4AEFD6AB213F850600D3ADED /* AllianceDSA.m */,
+				14BB33561EBC8B8A00280C92 /* Bionime.h */,
+				14BB33571EBC8B8A00280C92 /* Bionime.m */,
+				14BB33581EBC8B8A00280C92 /* H2BionimeEventProcess.m */,
+				14BB33591EBC8B8A00280C92 /* H2BionimeEventProcess.h */,
+				14BB33531EBC8B7D00280C92 /* Fora.m */,
+				14BB33541EBC8B7D00280C92 /* Fora.h */,
+				14BB331D1EBC8AAC00280C92 /* H2iCareSensEventProcess.m */,
+				14BB331E1EBC8AAC00280C92 /* CareSensN.m */,
+				14BB331F1EBC8AAC00280C92 /* OmnisEmbracePro.m */,
+				14BB33201EBC8AAC00280C92 /* H2iCareSensEventProcess.h */,
+				14BB33211EBC8AAC00280C92 /* OmnisEmbracePro.h */,
+				14BB33221EBC8AAC00280C92 /* CareSensN.h */,
+			);
+			name = iCareSens;
+			sourceTree = "<group>";
+		};
+		1400132C1B7F5C7C00F3ECF9 /* GlucoCard */ = {
+			isa = PBXGroup;
+			children = (
+				14BB33141EBC8A7800280C92 /* H2GlucoCardEventProcess.h */,
+				14BB33151EBC8A7800280C92 /* ROConfirm.m */,
+				14BB33161EBC8A7800280C92 /* H2GlucoCardEventProcess.m */,
+				14BB33171EBC8A7800280C92 /* ROConfirm.h */,
+				14BB33181EBC8A7800280C92 /* GlucoCardVital.h */,
+				14BB33191EBC8A7800280C92 /* GlucoCardVital.m */,
+			);
+			name = GlucoCard;
+			sourceTree = "<group>";
+		};
+		1400132D1B7F5DE200F3ECF9 /* H2_AUDIO */ = {
+			isa = PBXGroup;
+			children = (
+				CB01FA871A4445B6009CECBB /* H2AudioFacade.h */,
+				CB01FA881A4445B6009CECBB /* H2AudioFacade.m */,
+				CB01FA951A4445B6009CECBB /* H2AudioSession.h */,
+				CB01FA961A4445B6009CECBB /* H2AudioSession.m */,
+				14CA19341EC1B38C00A7B277 /* H2AudioHelper.h */,
+				14CA19351EC1B38C00A7B277 /* H2AudioHelper.m */,
+				14DF414C2011CB6900D4E6F4 /* StatusCode.h */,
+			);
+			name = H2_AUDIO;
+			sourceTree = "<group>";
+		};
+		1400132E1B7F5E3000F3ECF9 /* H2_SYSTEM */ = {
+			isa = PBXGroup;
+			children = (
+				CB01FA991A4445B6009CECBB /* h2CmdInfo.h */,
+				CB01FA9A1A4445B6009CECBB /* h2CmdInfo.m */,
+				140013031B7CF1B300F3ECF9 /* H2Config.h */,
+				140013041B7CF1B300F3ECF9 /* H2Config.m */,
+				140013091B7DEA8B00F3ECF9 /* H2Report.h */,
+				1400130A1B7DEA8B00F3ECF9 /* H2Report.m */,
+				1400130C1B7EF87900F3ECF9 /* H2SystemEventProcess.h */,
+				1400130D1B7EF87900F3ECF9 /* H2SystemEventProcess.m */,
+				140013381B7F7E9E00F3ECF9 /* H2SMHeader.h */,
+				140013391B7F7E9E00F3ECF9 /* H2SMHeader.m */,
+				14B6EDE01EC46A7200D18715 /* H2BgmTable.h */,
+				14B6EDE11EC46A7200D18715 /* H2BgmTable.m */,
+				14B6EDE31EC46AB600D18715 /* H2Records.h */,
+				14B6EDE41EC46AB600D18715 /* H2Records.m */,
+				14C3BA311ED0310A00D590C2 /* H2LastDateTime.h */,
+				14C3BA301ED0310A00D590C2 /* H2LastDateTime.m */,
+				1498490C1EE2669700D78521 /* H2Timer.h */,
+				1498490D1EE2669700D78521 /* H2Timer.m */,
+			);
+			name = H2_SYSTEM;
+			sourceTree = "<group>";
+		};
+		141B48BE1B31B5ED004BC5F0 /* H2_BLE */ = {
+			isa = PBXGroup;
+			children = (
+				14A8DF7B1FA8772F007D6A13 /* Ble_Service */,
+				14CA19281EC035AA00A7B277 /* H2BleEquipId.m */,
+				14CA192A1EC035AA00A7B277 /* H2BleEquipId.h */,
+				14CA19291EC035AA00A7B277 /* H2BleProfile.m */,
+				14CA192B1EC035AA00A7B277 /* H2BleProfile.h */,
+				14911FAE1B37BCA0003EB30D /* H2BleCentralManager.h */,
+				14911FAF1B37BCA0003EB30D /* H2BleCentralManager.m */,
+				14911FB01B37BCA0003EB30D /* H2BleService.h */,
+				14911FB11B37BCA0003EB30D /* H2BleService.m */,
+				14DFCF221BE0DA3A00776AEA /* H2BleHmd.h */,
+				14DFCF231BE0DA3A00776AEA /* H2BleHmd.m */,
+				14EFA1651C2A83BF00620695 /* BleBtm.h */,
+				14EFA1661C2A83BF00620695 /* BleBtm.m */,
+				14E4B9B61C3E526A00148E21 /* H2BgmCable.h */,
+				14E4B9B71C3E526A00148E21 /* H2BgmCable.m */,
+				141CBC151C0BFBD900740513 /* H2BleOad.h */,
+				141CBC161C0BFBD900740513 /* H2BleOad.m */,
+				14F7AF1B1F4C0A700034C675 /* H2BleTimer.h */,
+				14F7AF1C1F4C0A700034C675 /* H2BleTimer.m */,
+				143D8FEE1F78BF9700714E27 /* H2BleBgm.h */,
+				143D8FEF1F78BF9700714E27 /* H2BleBgm.m */,
+				140013291B7F5C3000F3ECF9 /* Bionime */,
+			);
+			name = H2_BLE;
+			sourceTree = "<group>";
+		};
+		1478ACFC1ED2CC15004C271D /* FORA_MULTI */ = {
+			isa = PBXGroup;
+			children = (
+				4A140185215A16FA004EB05C /* AndUA651BLE.h */,
+				4A140186215A16FA004EB05C /* AndUA651BLE.m */,
+				1478ACFD1ED2CC4C004C271D /* ForaD40.m */,
+				1478ACFF1ED2CC4C004C271D /* ForaD40.h */,
+				1478ACFE1ED2CC4C004C271D /* ForaW310.m */,
+				1478AD001ED2CC4C004C271D /* ForaW310.h */,
+			);
+			name = FORA_MULTI;
+			sourceTree = "<group>";
+		};
+		14A8DF731FA87213007D6A13 /* Ble_Meters */ = {
+			isa = PBXGroup;
+			children = (
+				14A8DF781FA87266007D6A13 /* BleBgm.h */,
+				14A8DF791FA87266007D6A13 /* BleBgm.m */,
+				14A8DF741FA8722B007D6A13 /* BioNime */,
+			);
+			name = Ble_Meters;
+			sourceTree = "<group>";
+		};
+		14A8DF741FA8722B007D6A13 /* BioNime */ = {
+			isa = PBXGroup;
+			children = (
+				4A3143D12133F7840040C0CD /* RocheSetInfo.h */,
+				4A3143D22133F7840040C0CD /* RocheSetInfo.m */,
+				4A3143CE2133F72E0040C0CD /* MicroLife.h */,
+				4A3143CF2133F72E0040C0CD /* MicroLife.m */,
+				4A554CA021087924002C38F5 /* OneTouchPlusFlex.h */,
+				4A554CA121087924002C38F5 /* OneTouchPlusFlex.m */,
+				14A8DF751FA87256007D6A13 /* Gm700sb.h */,
+				14A8DF761FA87256007D6A13 /* Gm700sb.m */,
+			);
+			name = BioNime;
+			sourceTree = "<group>";
+		};
+		14A8DF7B1FA8772F007D6A13 /* Ble_Service */ = {
+			isa = PBXGroup;
+			children = (
+				14A8DF7C1FA877B9007D6A13 /* BleDidConnectPeripheral.h */,
+				14A8DF7D1FA877B9007D6A13 /* BleDidDiscoverCharacteristics.h */,
+				14A8DF7E1FA877B9007D6A13 /* BleDidDiscoverPeripheral.h */,
+				14A8DF7F1FA877B9007D6A13 /* BleDidDiscoverServices.h */,
+				14A8DF801FA877B9007D6A13 /* BleDidUpdateNotificationState.h */,
+				14A8DF811FA877B9007D6A13 /* BleDidUpdateValue.h */,
+				14A8DF821FA877B9007D6A13 /* BleDidConnectPeripheral.m */,
+				14A8DF831FA877B9007D6A13 /* BleDidDiscoverCharacteristics.m */,
+				14A8DF841FA877B9007D6A13 /* BleDidDiscoverPeripheral.m */,
+				14A8DF851FA877B9007D6A13 /* BleDidDiscoverServices.m */,
+				14A8DF861FA877B9007D6A13 /* BleDidUpdateNotificationState.m */,
+				14A8DF871FA877B9007D6A13 /* BleDidUpdateValue.m */,
+			);
+			name = Ble_Service;
+			sourceTree = "<group>";
+		};
+		14CA19391EC40A6500A7B277 /* BLE_VENDOR */ = {
+			isa = PBXGroup;
+			children = (
+				1478ACFC1ED2CC15004C271D /* FORA_MULTI */,
+				14CA193E1EC40ACF00A7B277 /* OMRON_HBF-254C.m */,
+				14CA193F1EC40ACF00A7B277 /* OMRON_HBF-254C.h */,
+				14CA19401EC40ACF00A7B277 /* ARKRAY_GT-1830.m */,
+				14CA19421EC40ACF00A7B277 /* ARKRAY_GT-1830.h */,
+				14CA19451EC40ACF00A7B277 /* OMRON_HEM-9200T.m */,
+				14CA19431EC40ACF00A7B277 /* OMRON_HEM-9200T.h */,
+				14CA19471EC40ACF00A7B277 /* OMRON_HEM-7280T.m */,
+				14CA19441EC40ACF00A7B277 /* OMRON_HEM-7280T.h */,
+				14DF414B200DFE0A00D4E6F4 /* OmronDef.h */,
+				14C512241F4D305700A284FB /* H2Omron.h */,
+				14C512251F4D305700A284FB /* H2Omron.m */,
+			);
+			name = BLE_VENDOR;
+			sourceTree = "<group>";
+		};
+		14CA193A1EC40A7D00A7B277 /* BPM */ = {
+			isa = PBXGroup;
+			children = (
+				14CA193B1EC40A9D00A7B277 /* BPMViewController.m */,
+				14CA193C1EC40A9D00A7B277 /* BPMViewController.h */,
+			);
+			name = BPM;
+			sourceTree = "<group>";
+		};
+		14E4B9AB1C3B7C0000148E21 /* nRF */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B7C5F21B157CE006C7E2E /* BWS */,
+				14CA193A1EC40A7D00A7B277 /* BPM */,
+				14E917B81C463E020063BB20 /* Scanner */,
+				14E4B9AD1C3B7C5200148E21 /* BGM */,
+				14E4B9AC1C3B7C2300148E21 /* Utilitys */,
+			);
+			name = nRF;
+			sourceTree = "<group>";
+		};
+		14E4B9AC1C3B7C2300148E21 /* Utilitys */ = {
+			isa = PBXGroup;
+			children = (
+				14E4B9B21C3B7CE100148E21 /* CharacteristicReader.h */,
+				14E4B9B31C3B7CE100148E21 /* CharacteristicReader.m */,
+				14E4B9B41C3B7CE100148E21 /* Constants.h */,
+			);
+			name = Utilitys;
+			sourceTree = "<group>";
+		};
+		14E4B9AD1C3B7C5200148E21 /* BGM */ = {
+			isa = PBXGroup;
+			children = (
+				14E917B51C45F5220063BB20 /* ApexGlucoseReading.h */,
+				14E917B61C45F5220063BB20 /* ApexGlucoseReading.m */,
+				14E4B9AE1C3B7CBD00148E21 /* GlucoseReading.h */,
+				14E4B9AF1C3B7CBD00148E21 /* GlucoseReading.m */,
+				14E4B9B01C3B7CBD00148E21 /* RecordAccess.h */,
+				1480E4B51DDC55EC00BF7671 /* GlucoseReadingContext.h */,
+				1480E4B61DDC55EC00BF7671 /* GlucoseReadingContext.m */,
+			);
+			name = BGM;
+			sourceTree = "<group>";
+		};
+		14E917B81C463E020063BB20 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				14E917B91C463E2C0063BB20 /* ScannedPeripheral.h */,
+				14E917BA1C463E2C0063BB20 /* ScannedPeripheral.m */,
+				14E917BB1C463E2C0063BB20 /* ScannerDelegate.h */,
+			);
+			name = Scanner;
+			sourceTree = "<group>";
+		};
+		4A2B7C5F21B157CE006C7E2E /* BWS */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B7C6121B15801006C7E2E /* BWSViewController.h */,
+				4A2B7C6021B15801006C7E2E /* BWSViewController.m */,
+			);
+			name = BWS;
+			sourceTree = "<group>";
+		};
+		CB01FA5A1A4441AE009CECBB = {
+			isa = PBXGroup;
+			children = (
+				14A8DF731FA87213007D6A13 /* Ble_Meters */,
+				14CA19391EC40A6500A7B277 /* BLE_VENDOR */,
+				14E4B9AB1C3B7C0000148E21 /* nRF */,
+				1400132E1B7F5E3000F3ECF9 /* H2_SYSTEM */,
+				1400132D1B7F5DE200F3ECF9 /* H2_AUDIO */,
+				141B48BE1B31B5ED004BC5F0 /* H2_BLE */,
+				CB589B681A47BCC90041E0DE /* Frameworks */,
+				CB01FA7D1A44453E009CECBB /* MeterLite */,
+				CB01FA7E1A444560009CECBB /* Meters */,
+				CB01FA651A4441AE009CECBB /* h2SyncLib */,
+				CB01FAC81A444862009CECBB /* Supporting Files */,
+				CB01FA721A4441AE009CECBB /* h2SyncLibTests */,
+				CB01FA641A4441AE009CECBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB01FA641A4441AE009CECBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB01FA6E1A4441AE009CECBB /* h2SyncLibTests.xctest */,
+				14E917C71C474E340063BB20 /* libh2SyncLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB01FA651A4441AE009CECBB /* h2SyncLib */ = {
+			isa = PBXGroup;
+			children = (
+				CB01FA9B1A4445B6009CECBB /* h2MeterRecordInfo.h */,
+				CB01FA9C1A4445B7009CECBB /* h2MeterRecordInfo.m */,
+				CB01FA9D1A4445B7009CECBB /* H2Sync.h */,
+				CB01FA9E1A4445B7009CECBB /* H2Sync.m */,
+				CB01FAAE1A4445B7009CECBB /* VirtualRingBuffer.h */,
+				CB01FAAF1A4445B7009CECBB /* VirtualRingBuffer.m */,
+				14CA192E1EC06D4B00A7B277 /* H2CableFlow.h */,
+				14CA192F1EC06D4B00A7B277 /* H2CableFlow.m */,
+				14CA19311EC17FA800A7B277 /* H2DataFlow.h */,
+				14CA19321EC17FA800A7B277 /* H2DataFlow.m */,
+				1449B8CF1FE11A7A000F4A0B /* H2EquipID.h */,
+			);
+			path = h2SyncLib;
+			sourceTree = "<group>";
+		};
+		CB01FA721A4441AE009CECBB /* h2SyncLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB01FA731A4441AE009CECBB /* Supporting Files */,
+			);
+			path = h2SyncLibTests;
+			sourceTree = "<group>";
+		};
+		CB01FA731A4441AE009CECBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB01FA741A4441AE009CECBB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB01FA7D1A44453E009CECBB /* MeterLite */ = {
+			isa = PBXGroup;
+			children = (
+				1400132C1B7F5C7C00F3ECF9 /* GlucoCard */,
+				1400132B1B7F5C5F00F3ECF9 /* iCareSens */,
+				1400132A1B7F5C4400F3ECF9 /* BeneChek */,
+				140013281B7F5C1D00F3ECF9 /* ApexBio */,
+			);
+			name = MeterLite;
+			sourceTree = "<group>";
+		};
+		CB01FA7E1A444560009CECBB /* Meters */ = {
+			isa = PBXGroup;
+			children = (
+				140013241B7F5B4600F3ECF9 /* Roche */,
+				140013251B7F5B5900F3ECF9 /* Bayer */,
+				140013271B7F5B8400F3ECF9 /* OneTouch */,
+				140013261B7F5B7400F3ECF9 /* FreeStyle */,
+			);
+			name = Meters;
+			sourceTree = "<group>";
+		};
+		CB01FAC81A444862009CECBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB01FAC91A444AA2009CECBB /* H2DebugHeader.h */,
+				CB01FA971A4445B6009CECBB /* h2BrandModel.h */,
+				CB01FA981A4445B6009CECBB /* h2BrandModel.m */,
+				CB01FAAC1A4445B7009CECBB /* version.h */,
+				CB01FAAD1A4445B7009CECBB /* version.m */,
+				14AFE39D1FCBEF0800C777A7 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB589B681A47BCC90041E0DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14911FB41B37F180003EB30D /* CoreBluetooth.framework */,
+				CBF58C0A1A4A9D4F00B03818 /* AudioUnit.framework */,
+				CB589B6B1A47BD020041E0DE /* Foundation.framework */,
+				CB589B691A47BCF60041E0DE /* CoreAudio.framework */,
+				CB589B661A47BC9A0041E0DE /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14E917C61C474E340063BB20 /* h2SyncLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14E917CD1C474E340063BB20 /* Build configuration list for PBXNativeTarget "h2SyncLib" */;
+			buildPhases = (
+				14E917C31C474E340063BB20 /* Sources */,
+				14E917C41C474E340063BB20 /* Frameworks */,
+				14E917C51C474E340063BB20 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = h2SyncLib;
+			productName = h2SyncLib;
+			productReference = 14E917C71C474E340063BB20 /* libh2SyncLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CB01FA6D1A4441AE009CECBB /* h2SyncLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB01FA7A1A4441AE009CECBB /* Build configuration list for PBXNativeTarget "h2SyncLibTests" */;
+			buildPhases = (
+				CB01FA6A1A4441AE009CECBB /* Sources */,
+				CB01FA6B1A4441AE009CECBB /* Frameworks */,
+				CB01FA6C1A4441AE009CECBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = h2SyncLibTests;
+			productName = h2SyncLibTests;
+			productReference = CB01FA6E1A4441AE009CECBB /* h2SyncLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB01FA5B1A4441AE009CECBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = h2Sync;
+				TargetAttributes = {
+					142122811D3639D000AA8F88 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					14E917C61C474E340063BB20 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7ZAR28P2P5;
+					};
+					CB01FA6D1A4441AE009CECBB = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9TNVAWA2VV;
+					};
+				};
+			};
+			buildConfigurationList = CB01FA5E1A4441AE009CECBB /* Build configuration list for PBXProject "h2SyncLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = CB01FA5A1A4441AE009CECBB;
+			productRefGroup = CB01FA641A4441AE009CECBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14E917C61C474E340063BB20 /* h2SyncLib */,
+				CB01FA6D1A4441AE009CECBB /* h2SyncLibTests */,
+				142122811D3639D000AA8F88 /* UniversalLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB01FA6C1A4441AE009CECBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E917C21C474B2F0063BB20 /* H2Sync.h in Resources */,
+				14E917C11C474B160063BB20 /* h2MeterRecordInfo.h in Resources */,
+				14E917C01C474AEC0063BB20 /* ScannedPeripheral.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		142122851D3639E200AA8F88 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universalLib\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\nopen \"${BUILD_DIR}/${CONFIGURATION}-UniversalLib\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14E917C31C474E340063BB20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1478AD021ED2CC4C004C271D /* ForaW310.m in Sources */,
+				14E917D31C4755190063BB20 /* ScannedPeripheral.m in Sources */,
+				14BB33251EBC8AAC00280C92 /* OmnisEmbracePro.m in Sources */,
+				14BB334B1EBC8B4C00280C92 /* LSOneTouchUltraMini.m in Sources */,
+				14E917D41C4755190063BB20 /* ApexGlucoseReading.m in Sources */,
+				14E917D51C4755190063BB20 /* GlucoseReading.m in Sources */,
+				14E917D61C4755190063BB20 /* CharacteristicReader.m in Sources */,
+				14C3BA321ED0310A00D590C2 /* H2LastDateTime.m in Sources */,
+				14E917D71C4755190063BB20 /* h2CmdInfo.m in Sources */,
+				14CA19331EC17FA800A7B277 /* H2DataFlow.m in Sources */,
+				14BB335E1EBC8BB800280C92 /* LSOneTouchUltraVUE.m in Sources */,
+				14B6EDE21EC46A7200D18715 /* H2BgmTable.m in Sources */,
+				14A8DF8C1FA877B9007D6A13 /* BleDidUpdateNotificationState.m in Sources */,
+				14E917D81C4755190063BB20 /* H2Config.m in Sources */,
+				4A3143D02133F72E0040C0CD /* MicroLife.m in Sources */,
+				14A8DF881FA877B9007D6A13 /* BleDidConnectPeripheral.m in Sources */,
+				14BB335B1EBC8B8A00280C92 /* H2BionimeEventProcess.m in Sources */,
+				14C512261F4D305700A284FB /* H2Omron.m in Sources */,
+				14CA19251EC0279A00A7B277 /* benechek.m in Sources */,
+				14CA192D1EC035AA00A7B277 /* H2BleProfile.m in Sources */,
+				14CA194C1EC40ACF00A7B277 /* OMRON_HEM-7280T.m in Sources */,
+				14CA192C1EC035AA00A7B277 /* H2BleEquipId.m in Sources */,
+				14CA19481EC40ACF00A7B277 /* OMRON_HBF-254C.m in Sources */,
+				14BB334A1EBC8B4B00280C92 /* H2OneTouchEventProcess.m in Sources */,
+				14E917D91C4755190063BB20 /* H2Report.m in Sources */,
+				4A2B7C6221B15801006C7E2E /* BWSViewController.m in Sources */,
+				14E917DA1C4755190063BB20 /* H2SystemEventProcess.m in Sources */,
+				14E917DB1C4755190063BB20 /* H2SMHeader.m in Sources */,
+				14E917DC1C4755190063BB20 /* H2AudioFacade.m in Sources */,
+				14E917DD1C4755190063BB20 /* H2AudioSession.m in Sources */,
+				14E917DE1C4755190063BB20 /* H2BleCentralManager.m in Sources */,
+				14A8DF8B1FA877B9007D6A13 /* BleDidDiscoverServices.m in Sources */,
+				14A8DF891FA877B9007D6A13 /* BleDidDiscoverCharacteristics.m in Sources */,
+				4A140187215A16FB004EB05C /* AndUA651BLE.m in Sources */,
+				14E917DF1C4755190063BB20 /* H2BleService.m in Sources */,
+				14E917E01C4755190063BB20 /* H2BleHmd.m in Sources */,
+				14A8DF771FA87256007D6A13 /* Gm700sb.m in Sources */,
+				14E917E21C4755190063BB20 /* BleBtm.m in Sources */,
+				14BB333D1EBC8B0500280C92 /* ACCompactPlus.m in Sources */,
+				14BB33431EBC8B1F00280C92 /* JJBayerContour.m in Sources */,
+				14E917E31C4755190063BB20 /* H2BleOad.m in Sources */,
+				1478AD011ED2CC4C004C271D /* ForaD40.m in Sources */,
+				14E917E41C4755190063BB20 /* H2BgmCable.m in Sources */,
+				14BB331A1EBC8A7800280C92 /* ROConfirm.m in Sources */,
+				14CA194B1EC40ACF00A7B277 /* OMRON_HEM-9200T.m in Sources */,
+				14CA19491EC40ACF00A7B277 /* ARKRAY_GT-1830.m in Sources */,
+				4A3143D32133F7840040C0CD /* RocheSetInfo.m in Sources */,
+				14BB33331EBC8ADD00280C92 /* Omnis.m in Sources */,
+				14BB331B1EBC8A7800280C92 /* H2GlucoCardEventProcess.m in Sources */,
+				1498490E1EE2669700D78521 /* H2Timer.m in Sources */,
+				14BB33231EBC8AAC00280C92 /* H2iCareSensEventProcess.m in Sources */,
+				14BB33341EBC8ADD00280C92 /* H2ApexBioEventProcess.m in Sources */,
+				14B6EDE51EC46AB600D18715 /* H2Records.m in Sources */,
+				14BB333C1EBC8B0500280C92 /* ACAviva.m in Sources */,
+				1480E4B71DDC55EC00BF7671 /* GlucoseReadingContext.m in Sources */,
+				14CA19261EC0279A00A7B277 /* H2BeneChekEventProcess.m in Sources */,
+				14BB33241EBC8AAC00280C92 /* CareSensN.m in Sources */,
+				4AEFD6AC213F850600D3ADED /* AllianceDSA.m in Sources */,
+				14BB335A1EBC8B8A00280C92 /* Bionime.m in Sources */,
+				14E917FC1C4755190063BB20 /* h2MeterRecordInfo.m in Sources */,
+				14E917FD1C4755190063BB20 /* H2Sync.m in Sources */,
+				14BB333B1EBC8B0500280C92 /* H2RocheEventProcess.m in Sources */,
+				4A554CA221087924002C38F5 /* OneTouchPlusFlex.m in Sources */,
+				14A8DF8A1FA877B9007D6A13 /* BleDidDiscoverPeripheral.m in Sources */,
+				14CA19301EC06D4B00A7B277 /* H2CableFlow.m in Sources */,
+				14CA193D1EC40A9D00A7B277 /* BPMViewController.m in Sources */,
+				14E917FE1C4755190063BB20 /* VirtualRingBuffer.m in Sources */,
+				14BB331C1EBC8A7800280C92 /* GlucoCardVital.m in Sources */,
+				14E917FF1C4755190063BB20 /* h2BrandModel.m in Sources */,
+				14BB33551EBC8B7D00280C92 /* Fora.m in Sources */,
+				14BB334C1EBC8B4C00280C92 /* LSOneTouchUltra2.m in Sources */,
+				14CA19271EC0279A00A7B277 /* Hmd.m in Sources */,
+				143D8FF01F78BF9700714E27 /* H2BleBgm.m in Sources */,
+				14E918001C4755190063BB20 /* version.m in Sources */,
+				14BB33521EBC8B6700280C92 /* FreeStyleLite.m in Sources */,
+				14BB33421EBC8B1F00280C92 /* H2BayerEventProcess.m in Sources */,
+				14BB33511EBC8B6700280C92 /* H2FreeStyleEventProcess.m in Sources */,
+				14CA19361EC1B38C00A7B277 /* H2AudioHelper.m in Sources */,
+				14A8DF7A1FA87266007D6A13 /* BleBgm.m in Sources */,
+				14F7AF1D1F4C0A700034C675 /* H2BleTimer.m in Sources */,
+				14A8DF8D1FA877B9007D6A13 /* BleDidUpdateValue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB01FA6A1A4441AE009CECBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		142122821D3639D100AA8F88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: jchuang@health2sync.com (86NTSQ82M5)";
+				GCC_PREFIX_HEADER = h2Lib/prefixheader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		142122831D3639D100AA8F88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: jchuang@health2sync.com (86NTSQ82M5)";
+				GCC_PREFIX_HEADER = h2Lib/prefixheader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"DEBUG_ZERO=0",
+					"BP_STRING=1",
+					"SDK_AUTO=1",
+					"SDK_REPORT=0",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		14E917CE1C474E340063BB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: jchuang@health2sync.com (86NTSQ82M5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jason chuang (TAX8R22544)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7ZAR28P2P5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = h2Lib/prefixheader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "af36cf99-bdf0-47ad-87e1-eb53e93d21f9";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		14E917CF1C474E340063BB20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: jchuang@health2sync.com (86NTSQ82M5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7ZAR28P2P5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = h2Lib/prefixheader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"DEBUG_ZERO=0",
+					"BP_STRING=1",
+					"SDK_AUTO=1",
+					"SDK_REPORT=0",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3745688d-0606-491e-b13b-f3a47f51a30c";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB01FA751A4441AE009CECBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jason chuang (TAX8R22544)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "9c51605d-9490-4ed5-8312-1ec5b06d8f16";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB01FA761A4441AE009CECBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jason chuang (TAX8R22544)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "9c51605d-9490-4ed5-8312-1ec5b06d8f16";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		CB01FA7B1A4441AE009CECBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = h2SyncLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.h2sync.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		CB01FA7C1A4441AE009CECBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = h2SyncLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.h2sync.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		142122841D3639D100AA8F88 /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				142122821D3639D100AA8F88 /* Debug */,
+				142122831D3639D100AA8F88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14E917CD1C474E340063BB20 /* Build configuration list for PBXNativeTarget "h2SyncLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14E917CE1C474E340063BB20 /* Debug */,
+				14E917CF1C474E340063BB20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB01FA5E1A4441AE009CECBB /* Build configuration list for PBXProject "h2SyncLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB01FA751A4441AE009CECBB /* Debug */,
+				CB01FA761A4441AE009CECBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB01FA7A1A4441AE009CECBB /* Build configuration list for PBXNativeTarget "h2SyncLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB01FA7B1A4441AE009CECBB /* Debug */,
+				CB01FA7C1A4441AE009CECBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB01FA5B1A4441AE009CECBB /* Project object */;
+}

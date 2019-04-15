@@ -98,8 +98,6 @@
 }
 
 - (void)sendBackUserProfileData:(NSString *)uid {
-    
-    
     NSDictionary *userData = [[NSDictionary alloc] init];
     userData = @{
         @"kOAuth_API": @"v1",
@@ -107,7 +105,6 @@
         @"kOAuth_AccessToken": [_dictValues objectForKey:@"kOAuth_AccessToken"],
         @"kOAuth_RefreshToken": [_dictValues objectForKey:@"kOAuth_RefreshToken"],
         //@"kOAuth_ExpiredDate": [_dictValues objectForKey:@"kOAuth_ExpiredDate"],
-        
         //@"kOAuth_UnixTimeStamp": [_dictValues objectForKey:@"kOAuth_UnixTimeStamp"],
         @"kOAuth_ExpiredTime": [_dictValues objectForKey:@"kOAuth_UnixTimeStamp"],
         @"kOAuth_TokenType": [_dictValues objectForKey:@"kOAuth_TokenType"],

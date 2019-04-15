@@ -183,10 +183,12 @@
     NSHTTPURLResponse *response = (NSHTTPURLResponse *)operation.URLResponse;
     DLog(@"http res = %@", response);
     if (response.statusCode == 200) {
+        DLog(@"");
         NSError *parserError;
         NSDictionary *authData = [NSJSONSerialization JSONObjectWithData:operation.responseData options:0 error:&parserError];
         
-        DLog(@"");
+        DLog(@"RESP CODE = %@", operation.responseData);
+        //DLog(@"RESP CODE = %@", response);
         DLog(@"auth data = %@", authData);
         DLog(@"");
         

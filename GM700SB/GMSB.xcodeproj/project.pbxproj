@@ -691,7 +691,6 @@
 				TargetAttributes = {
 					1486B5F91C50DB21005CE247 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 9TNVAWA2VV;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.InterAppAudio = {
@@ -706,6 +705,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -938,7 +938,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 9TNVAWA2VV;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = SQX/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -961,7 +961,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.health2sync.-.X";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ab679b5c-4bcf-4152-900d-88bb7f5ddfa3";
-				PROVISIONING_PROFILE_SPECIFIER = H2SdkDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
